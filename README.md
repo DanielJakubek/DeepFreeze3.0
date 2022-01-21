@@ -2,9 +2,12 @@
 AC31007/AC51003 Agile Software Engineering - Group Number [x]
 
 Group Members:
-- Member 1 (Matriculation Number)
-- Member 2 (Matriculation Number)
-- Member X (Matriculation Number)
+- Adrain Brookes (Matriculation Number)
+- Alessandro Cavicchioli (Matriculation Number)
+- Gregor Davis (Matriculation Number)
+- Sameer Al Harbi
+- Daniel Jakubek   [ 19000 3268 ]
+- Scott MacLennan
 
 ## Hints:
 - You may wish to change the issue tags that are in GitHub to map to different activities that you are carrying out:
