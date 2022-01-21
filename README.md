@@ -6,7 +6,7 @@ Group Members:
 - Alessandro Cavicchioli (Matriculation Number)
 - Gregor Davis (Matriculation Number)
 - Sameer Al Harbi
-- Daniel Jakubek   [ 19000 3268 ]
+- Daniel Jakubek   [ 190003268 ]
 - Scott MacLennan
 
 ## Hints:
