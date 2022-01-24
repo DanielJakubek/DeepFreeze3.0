@@ -2,7 +2,7 @@
 
 
 Group Members:
-- Adrain Brookes [180024821]
+- Adrian Brookes [180024821]
 - Alessandro Cavicchioli 
 - Gregor Davis 
 - Sameer Al Harbi [190007048]
