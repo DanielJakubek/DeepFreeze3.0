@@ -6,7 +6,7 @@ Group Members:
 - Alessandro Cavicchioli 
 - Gregor Davis 
 - Sameer Al Harbi [190007048]
-- Daniel Jakubek   [ 190003268 ]
+- Daniel Jakubek   [190003268]
 - Scott MacLennan [190005675]
 
 ## Hints:
