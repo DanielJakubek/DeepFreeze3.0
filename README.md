@@ -1,5 +1,5 @@
-# AgileDevelopment_templateCWRepo
-AC31007/AC51003 Agile Software Engineering - Group Number [x]
+# AC31007/AC51003 Agile Software Engineering - Group Number [2]
+
 
 Group Members:
 - Adrain Brookes [180024821]
