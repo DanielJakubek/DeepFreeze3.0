@@ -1,4 +1,5 @@
-AC31007/AC51003 Agile Software Engineering - Group Number 2
+# AgileDevelopment_templateCWRepo
+AC31007/AC51003 Agile Software Engineering - Group Number [x]
 
 Group Members:
 - Adrain Brookes 
@@ -6,7 +7,7 @@ Group Members:
 - Gregor Davis 
 - Sameer Al Harbi
 - Daniel Jakubek   [ 190003268 ]
-- Scott MacLennan
+- Scott MacLennan [190005675]
 
 ## Hints:
 - You may wish to change the issue tags that are in GitHub to map to different activities that you are carrying out:
