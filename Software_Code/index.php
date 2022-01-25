@@ -5,8 +5,8 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 $rules = array(
     //
     //API Routes
-    'apiShowDogs' => "/api/allDogs",
-    'apiShowSingleDogs' => "/api/singleDog/(?'dogID'[\w\-]+)",
+    'apiShowDogs' => "/api/showUsers",
+
 
 
 
