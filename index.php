@@ -29,6 +29,6 @@ include(INCLUDE_DIR . '404.php');
 
 <h1> Deep Freeze Co, only the best </h1>
 
-<p> Bean 2 </p>
+<p> Bean 20 </p>
 
 </html>
