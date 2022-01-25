@@ -24,3 +24,10 @@ foreach ($rules as $action => $rule) {
 include(INCLUDE_DIR . '404.php');
 
 ?>
+
+<html>
+
+
+<p> Bean </p>
+
+</html>
