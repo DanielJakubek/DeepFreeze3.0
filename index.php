@@ -7,21 +7,6 @@ $rules = array(
     //API Routes
     'apiShowDogs' => "/api/showUsers",
 
-
-
-
-    //Admin Pages
-    //
-    'login' => "/login",
-    'create_article' => "/createarticle",
-    'logout' => "/logout",
-    //
-    // Home Page
-    //
-    'home' => "/"
-    //
-    // Style
-    //
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
