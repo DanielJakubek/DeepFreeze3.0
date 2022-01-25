@@ -4,7 +4,7 @@
 Group Members:
 - Adrian Brookes [180024821]
 - Alessandro Cavicchioli [190017234]
-- Gregor Davis 
+- Gregor Davis [190014863]
 - Sameer Al Harbi [190007048]
 - Daniel Jakubek   [190003268]
 - Scott MacLennan [190005675]
