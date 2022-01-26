@@ -3,7 +3,7 @@
 define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 
 $rules = array(
-    //
+    
     //API Routes
     'test' => "/api/test",
     'admin_login' => "/api/admin",
