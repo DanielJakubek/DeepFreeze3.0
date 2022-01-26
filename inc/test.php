@@ -15,3 +15,6 @@ while ($row = $result->fetch_array()) {
   echo json_encode($rows);
 
 ?>
+
+
+<html>  asdad </html>
