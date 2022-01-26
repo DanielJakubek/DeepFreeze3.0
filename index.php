@@ -54,10 +54,12 @@
 <?php
 
   include("test.php");
-  
-  $testArray = json_decode($jsonInfo);
 
-  echo $testArray->Daniel;
+
+
+  foreach($rows as $flower){
+    echo $flower . "\n";
+}
 
 ?>
 
