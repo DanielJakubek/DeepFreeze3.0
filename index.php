@@ -72,7 +72,7 @@ include(INCLUDE_DIR . '404.php');
 
 
 
-<h1> The build finished 2/0 </h1>
+<h1> The build finished </h1>
 
 
 
@@ -87,9 +87,10 @@ $rows = array();
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     $rows[] = $row;
-    echo "rows: ", $row;
+    echo "rows: ", $rows[0];
 
 }
+
 
 
   //Closes the database connection

@@ -13,7 +13,6 @@ while ($row = $result->fetch_array()) {
 
 }
 
-
   //Closes the database connection
   mysql_close($db);
 
