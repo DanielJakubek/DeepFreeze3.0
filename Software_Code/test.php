@@ -14,8 +14,6 @@ while ($row = $result->fetch_array()) {
 
   header('Content-type: application/json');
   echo json_encode($rows);
-  echo json_decode($rows):
-
 
   //Closes the database connection
   mysql_close($db);
