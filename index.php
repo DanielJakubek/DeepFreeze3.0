@@ -87,7 +87,7 @@ $rows = array();
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     $rows[] = $row;
-    echo "rows: ", $rows;
+    echo "rows: ", $row;
 
 }
 
