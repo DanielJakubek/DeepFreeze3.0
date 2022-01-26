@@ -22,3 +22,5 @@ while ($row = $result->fetch_array()) {
 ?>
 
 
+<html> haha quirky </html>
+
