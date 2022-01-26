@@ -12,7 +12,6 @@ $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     $rows[] = $row;
 }
-  header('Content-type: application/json');
 
   try {
     $jsonInfo = json_encode($rows);
