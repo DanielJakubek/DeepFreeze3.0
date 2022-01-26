@@ -1,7 +1,5 @@
 
-
-.newPackage #searchingFromForHoliday, #Filter{ margin: 20px; border: 2px solid #81C3D7; padding: 5px;}
-.newPackage .form-group { margin: 5px;}
+/* Start of navigation */
 
 /* Navigation button and items*/
 nav button, nav a{
@@ -38,74 +36,105 @@ nav{
   overflow: visible;
  }
 
-/* Hides the staff button */
- nav #admnBtn{
-   display: none;
+/* End of navigation */
+
+
+
+
+
+/* Start of index page */
+
+ /* Container holding the image and the text */
+#welcomeSign {
+   position: relative;
+   text-align: center;
+   color: white;
+   padding-right: 0px;
+   padding-left: 0px;
  }
 
-/* Sign In */
-.modal-content{
-  border-radius: 20px !important;
-  box-shadow: 5px 10px 25px #3A7CA5;
-  border: none;
-}
-
-#bookingContainer{ min-width: 500px;}
-#border{ padding: 50px; }
-#forgotPass { text-align: center;}
-#form-distance { padding-top: 5px;}
-
-/* Header in the modal */
-#login-text {
-  text-align: center;
-  padding-bottom: 6vh;
-}
-
-/* button and text under button in modal */
-#signing-in{
-  text-align: center;
-   padding-top: 8vh;
+ /* Bottom left text */
+ .bottom-left {
+   position: absolute;
+   bottom: 8px;
+   left: 16px;
+   color: white;
  }
 
-/* Links in the modal */
-#border a{
-  text-decoration: none;
-  color: black;
+#contentBreak{
+  padding-bottom: 5px;
+  background-color: #049a9B;
 }
 
-
-/* Main content */
-#bgImg{
-  background-image: url('graphics/mountain.jpeg');
-  height: 100vh;
-  width: auto;
-  color: black;
+#littleInformation{
   text-align: center;
-  padding: 25px;
+  padding: 10px;
+}
+
+#carouselOfGoals{
+  text-align: center;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+button{
+  background-color: red;
+}
+
+#carouselOfGoals img {
+  padding: 10px;
+}
+
+#carouselOfGoals span{
+  background-color: red;
 }
 
 
-/* Spaces out the rows on page: x - sorry forgot what page*/
-.row{ padding: 15px; }
 
-/* Staff page only table*/
-.staff .table{ border: 2px solid black; }
-/* Staff page only dropdown button*/
-.staff button{ margin-bottom: 10px;}
-/* Staff page only btn spacing */
-.staff input:hover{ background-color: #81C3D7;}
-/* Staff page only btn width*/
-.staff input{ width: 165px;}
-.staff .dropdown { margin: 10px; }
-
-/* Staff page only buttons */
-.staff input{
-  margin: 5px;
-  border-radius: 0px;
-  background-color: #81C3D7;
-  color: black;
-  border: none;
+*{
+  background-color: #;
 }
+
+
+/* End of index page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -126,4 +155,10 @@ nav{
    nav a{ padding-left: 3px!important;}
   /* Sign up and login in buttons */
    nav #buttons .nav-item  {padding-top: 5px;}
+ }
+
+ /* When screen size <990px */
+ @media screen and (max-width: 680px) {
+   #carouselOfGoals img{max-width: 26vh;}
+
  }
