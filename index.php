@@ -58,7 +58,7 @@
 
 
   foreach($rows as $flower){
-    echo $flower . "\n";
+    echo "ahaha" . "\n";
 }
 
 ?>
