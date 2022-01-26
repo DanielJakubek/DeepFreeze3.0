@@ -5,8 +5,7 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 $rules = array(
     //
     //API Routes
-    'apiShowDogs' => "/api/showUsers",
-
+    'test' => "/test",
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
@@ -22,6 +21,9 @@ foreach ($rules as $action => $rule) {
 
 // nothing is found so handle the 404 error
 include(INCLUDE_DIR . '404.php');
+
+?>
+
 
 <!doctype html>
 <html lang="en">
@@ -66,6 +68,38 @@ include(INCLUDE_DIR . '404.php');
 
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+<h1> The build finished </h1>
+
+
+
+
+<?php
+
+include("dbconnect.php");
+
+$sql = "SELECT * FROM test";
+
+$rows = array();
+$result = $db->query($sql);
+while ($row = $result->fetch_array()) {
+    $rows[] = $row;
+    echo "rows: ", $rows[0];
+
+}
+
+
+
+  //Closes the database connection
+  mysql_close($db);
+
+?>
+
+
+
 
 
 </html>
