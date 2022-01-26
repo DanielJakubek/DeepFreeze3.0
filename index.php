@@ -46,6 +46,6 @@
 
 
 <h1> The build finished </h1>
-
+<a href="test.php"> Click me :) </a>
 
 </html>
