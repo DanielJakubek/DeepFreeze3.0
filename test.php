@@ -1,9 +1,6 @@
 
 <html> 
-  
-
-
-
+  <body>
 <?php
 
 include("dbconnect.php");
@@ -29,5 +26,5 @@ while ($row = $result->fetch_array()) {
 
 <h1> This test is poggers, pog </h1>
 
-
+</body>
 </html>
