@@ -51,17 +51,5 @@
 <button onclick="document.location='test.php'"> Click me :) </button>
 
 
-<?php
-
-  include("test.php");
-
-
-
-  foreach($rows as $flower){
-    echo "ahaha" . "\n";
-}
-
-?>
-
 
 </html>
