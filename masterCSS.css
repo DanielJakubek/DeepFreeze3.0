@@ -1,4 +1,5 @@
 
+/* Start of navigation */
 
 /* Navigation button and items*/
 nav button, nav a{
@@ -35,6 +36,107 @@ nav{
   overflow: visible;
  }
 
+/* End of navigation */
+
+
+
+
+
+/* Start of index page */
+
+ /* Container holding the image and the text */
+#welcomeSign {
+   position: relative;
+   text-align: center;
+   color: white;
+   padding-right: 0px;
+   padding-left: 0px;
+ }
+
+ /* Bottom left text */
+ .bottom-left {
+   position: absolute;
+   bottom: 8px;
+   left: 16px;
+   color: white;
+ }
+
+#contentBreak{
+  padding-bottom: 5px;
+  background-color: #049a9B;
+}
+
+#littleInformation{
+  text-align: center;
+  padding: 10px;
+}
+
+#carouselOfGoals{
+  text-align: center;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+button{
+  background-color: red;
+}
+
+#carouselOfGoals img {
+  padding: 10px;
+}
+
+#carouselOfGoals span{
+  background-color: red;
+}
+
+
+
+*{
+  background-color: #;
+}
+
+
+/* End of index page */
+
+#AddNewItemContainer{
+  text-align: center;
+  padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  /* When screen size <990px */
@@ -54,4 +156,10 @@ nav{
    nav a{ padding-left: 3px!important;}
   /* Sign up and login in buttons */
    nav #buttons .nav-item  {padding-top: 5px;}
+ }
+
+ /* When screen size <990px */
+ @media screen and (max-width: 680px) {
+   #carouselOfGoals img{max-width: 26vh;}
+
  }
