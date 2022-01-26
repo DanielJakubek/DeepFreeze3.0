@@ -21,11 +21,9 @@
     }
 
     #map {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 30%;
-      height: 40%;
+      position: static;
+      width: 100%;
+      height: 100%;
     }
 
     ;
@@ -115,56 +113,76 @@
         </p>
       </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col">
+        <p>
+          In lacinia lobortis lorem at semper. Phasellus tristique lacus sit amet odio fermentum, nec commodo sapien
+          blandit. Nam eu diam eget orci malesuada vulputate vitae ac odio. Maecenas sit amet malesuada purus. Cras id
+          sapien congue, posuere tortor id, vestibulum lacus. Curabitur pretium libero nulla, quis varius elit dapibus
+          vel. In condimentum luctus velit, vel semper arcu pulvinar vulputate. Suspendisse ex massa, vulputate in nisi
+          sed, imperdiet pellentesque justo. Cras condimentum at ipsum sed facilisis. Nulla commodo auctor tellus, vitae
+          pretium justo gravida non. Ut volutpat turpis vitae dui vehicula, in consectetur ligula pulvinar. Quisque
+          auctor nisl nec semper luctus. Integer sit amet mi sed purus pulvinar imperdiet. Duis magna turpis,
+          ullamcorper vitae condimentum quis, ullamcorper sed metus. Nulla ultricies augue eu metus dapibus, ac tempor
+          diam hendrerit. Phasellus tincidunt suscipit vulputate.
+        </p>
 
+      </div>
+      <div class="col">
+        <div id='map'>
+          <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JlZ29yZG9vbSIsImEiOiJja3l1NjF4Z2wwM2MwMm50NHVqeG52c2Y0In0.KNoSFWWsfL7xrj2kAnwjpQ';
+            var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/dark-v9',
+              center: [-2.982, 56.467],
+              zoom: 12
+            });
+            map.addControl(new mapboxgl.NavigationControl());
+            map.on('load', function () {
+              map.addLayer({
+                "id": "points",
+                "type": "symbol",
+                "source": {
+                  "type": "geojson",
+                  "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                      "type": "Feature",
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [-2.977880, 56.460950]
+                      },
+                      "properties": {
+                        "title": "Shell",
+                        "icon": "fuel"
+                      }
+                    }]
+                  }
+                },
+                "layout": {
+                  "icon-image": "{icon}-15",
+                  "text-field": "{title}",
+                  "text-font": ["Roboto Regular"],
+                  "text-offset": [0.6, 0.1],
+                  "text-anchor": "left",
+                }
+              });
+            });
+
+          </script>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
   <!-- Map -->
   <!-- How do you get this thing to float correctly in the text surrounding it? -->
-  <div id='map'></div>
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JlZ29yZG9vbSIsImEiOiJja3l1NjF4Z2wwM2MwMm50NHVqeG52c2Y0In0.KNoSFWWsfL7xrj2kAnwjpQ';
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/dark-v9',
-      center: [-2.982, 56.467],
-      zoom: 12
-    });
-    map.addControl(new mapboxgl.NavigationControl());
-    map.on('load', function () {
-      map.addLayer({
-        "id": "points",
-        "type": "symbol",
-        "source": {
-          "type": "geojson",
-          "data": {
-            "type": "FeatureCollection",
-            "features": [{
-              "type": "Feature",
-              "geometry": {
-                "type": "Point",
-                "coordinates": [-2.977880, 56.460950]
-              },
-              "properties": {
-                "title": "Shell",
-                "icon": "fuel"
-              }
-            }]
-          }
-        },
-        "layout": {
-          "icon-image": "{icon}-15",
-          "text-field": "{title}",
-          "text-font": ["Roboto Regular"],
-          "text-offset": [0.6, 0.1],
-          "text-anchor": "left",
-        }
-      });
-    });
-        //var marker = new mapboxgl.Marker()
-        //.setLngLat([-2.991975, 56.455827])
-        //.addTo(map);
-  </script>
-
-
+  
+</div>
 </body>
 
 
