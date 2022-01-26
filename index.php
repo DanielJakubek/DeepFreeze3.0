@@ -6,6 +6,7 @@ $rules = array(
     //
     //API Routes
     'test' => "/api/test",
+    'admin_login' => "/api/admin",
 
 );
 
