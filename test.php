@@ -15,9 +15,8 @@ while ($row = $result->fetch_array()) {
     $rows[] = $row;
 }
 
-  printf($rows);
-
-
+  header('Content-type: application/json');
+  echo json_encode($rows);
 
 ?>
 
