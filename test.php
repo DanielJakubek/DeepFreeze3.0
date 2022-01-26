@@ -11,6 +11,10 @@ while ($row = $result->fetch_array()) {
     $rows[] = $row;
 
 }
+
+  header('Content-type: application/json');
+  echo json_encode($rows);
+
   //Closes the database connection
   mysql_close($db);
 
