@@ -54,8 +54,8 @@
 <?php
 
   include("test.php");
-  $testArray = json_decode(jsonInfo);
-  
+  $testArray = json_decode($jsonInfo);
+
   echo $testArray->Daniel;
 
 ?>
