@@ -51,4 +51,14 @@
 <button onclick="document.location='test.php'"> Click me :) </button>
 
 
+<?php
+
+  include("test.php");
+  $testArray = json_decode(jsonInfo);
+  
+  echo $testArray->Daniel;
+
+?>
+
+
 </html>
