@@ -56,10 +56,12 @@ nav{
    nav #buttons .nav-item  {padding-top: 5px;}
  }
 
+/*Move the user box down*/
 #login{
   margin-top: 10%;  
 }
 
+/*button width*/
 #submit-button{
     width: 80px;
 }
