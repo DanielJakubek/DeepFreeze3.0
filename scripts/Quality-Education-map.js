@@ -3,44 +3,44 @@ const features = [
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [-2.9823315408624524, 56.45934140734307]
+            "coordinates": [-2.9695061745578832, 56.464852114923744]
         },
         "properties": {
-            "title": "University of Dundee",
-            "icon": "school"
+            "title": "Central Library",
+            "icon": "library"
         }
     },
     {
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [-2.9711849783481394, 56.46948931245987],
+            "coordinates": [-2.9712570999551637, 56.461926050039345],
         },
         "properties": {
-            "title": "Rosebank Primary School",
-            "icon": "school"
+            "title": "Barnardo's",
+            "icon": "shop"
         }
     },
     {
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [-2.9954024687166783, 56.479652140327616],
+            "coordinates": [-2.992356697662428, 56.456405592794006],
         },
         "properties": {
-            "title": "Kingspark School",
-            "icon": "school"
+            "title": "Shelter Charity Shop",
+            "icon": "shop"
         }
     },
     {
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [-2.9968293757039444, 56.475926111668784],
+            "coordinates": [-3.0091986989683597, 56.47360630422643],
         },
         "properties": {
-            "title": "St Johns RC High School",
-            "icon": "school"
+            "title": "British Heart Foundation",
+            "icon": "shop"
         }
     }
 ]
