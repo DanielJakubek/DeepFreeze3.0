@@ -46,7 +46,7 @@ else
     <div class="col-4">
     <button style='margin: 5%; width: 80%;' class="btn btn-primary">Create a new Admin User</button>
     <button style='margin: 5%; width: 35%;' class="btn btn-primary">Edit Website</button>
-    <button style='margin: 5%; width: 35%;' class="btn btn-danger">Log Out</button>
+    <button style='margin: 5%; width: 35%;' class="btn btn-danger" onclick="location.assign('admin_login.php');"> Log Out</button>
     </div>
   </div>
   </div>
