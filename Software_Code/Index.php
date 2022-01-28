@@ -38,7 +38,7 @@
                 <div class="carousel-item active">
                   <div class="row">
                     <div class="col-md-4" href="No-Poverty.html">
-                      <a href="No-Poverty.html">
+                      <a href="OddPages/New folder/No-Poverty.html">
                        <img src="Images\NoPoverttyBW.jpg" class="d-block w-100" alt="No Poverty">
                       </a>
                     </div>
@@ -57,20 +57,28 @@
                 <div class="carousel-item">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="Images\EducationBW.jpg" class="d-block w-100" alt="...">
+                      <a href="Quality-Education.html">
+                       <img src="Images\EducationBW.jpg" class="d-block w-100" alt="Education">
+                      </a>
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\GenderEqBW.jpg" class="d-block w-100" alt="...">
+                      <a href="OddPages/New folder/GenderEquality.html">
+                       <img src="Images\GenderEqBW.jpg" class="d-block w-100" alt="Gender Equality">
+                      </a>
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\CleanWaterBW.jpg" class="d-block w-100" alt="...">
+                      <a href="Clean-Water-And-Sanitation.html">
+                        <img src="Images\CleanWaterBW.jpg" class="d-block w-100" alt="Clean Water">
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="Images\cleanEnergyBW.jpg" class="d-block w-100" alt="...">
+                      <a href="OddPages/New folder/Energy.html">
+                      <img src="Images\cleanEnergyBW.jpg" class="d-block w-100" alt="Clean Energy">
+                      </a> 
                     </div>
                     <div class="col-md-4">
                       <img src="Images\growthBW.jpg" class="d-block w-100" alt="...">
