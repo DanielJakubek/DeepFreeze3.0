@@ -1,3 +1,3 @@
 # Sprint Retrospective
 
-You should include in this folder anything that relates to your Sprint Retrospective.
+We have put this retrospective into a pdf file that can be found in this directory. 
