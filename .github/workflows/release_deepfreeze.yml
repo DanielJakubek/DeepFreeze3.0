@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'DeepFreeze'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0C35869C1B1B466DBF41A966FD63B49F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_97D6EDBE6786445D94625231EC936FC8 }}
           package: .
