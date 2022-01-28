@@ -51,26 +51,26 @@
                 <div class="carousel-item">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="Images\4.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\EducationBW.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\5.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\GenderEqBW.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\6.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\CleanWaterBW.jpg" class="d-block w-100" alt="...">
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="Images\7.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\cleanEnergyBW.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\8.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\growthBW.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\9.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\innovationBW.jpg" class="d-block w-100" alt="...">
                     </div>
                   </div>
                 </div>
@@ -105,39 +105,39 @@
                 <div class="carousel-item active">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="Images\10.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\redudcedBW.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\11.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\cityBW.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\12.jpg" class="d-block w-100" alt="...">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img src="Images\13.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                      <img src="Images\14.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                      <img src="Images\15.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\consumeBW.jpg" class="d-block w-100" alt="...">
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="Images\16.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\climateBW.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\17.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\waterBW.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\1.jpg" class="d-block w-100" alt="...">
+                      <img src="Images\landBW.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="Images\peaceBW.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                      <img src="Images\goalsBW.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                      <img src="Images\blankBW.jpg" class="d-block w-100" alt="...">
                     </div>
                   </div>
                 </div>
