@@ -3,21 +3,10 @@ const features = [
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [-2.957798301543697, 56.46791665399365]
+            "coordinates": [-2.9842463168866225, 56.4623773862972]
         },
         "properties": {
-            "description": "One World Centre",
-            "icon": "marker"
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [-3.0176032015432317, 56.48000219928659]
-        },
-        "properties": {
-            "description": "Dundee Refugeee Support",
+            "description": "ScrapAntics",
             "icon": "marker"
         }
     },
