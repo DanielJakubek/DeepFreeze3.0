@@ -1,3 +1,3 @@
 # Video Links
 
-You should update this README.md file to contain links to your groups video files that have been created for this Sprint.
+Video link to two of the scrum meetins we recorded: https://www.youtube.com/watch?v=vJG6zvM16SA
