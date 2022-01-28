@@ -34,6 +34,7 @@ Gregor:
 Will be working on azure hosting setup and assisting Daniel with story 20. Will also start working on the map API implementation 
  
 Alessandro:
+Will be contributing to the map API implementation as pair programming, and will create an initial design draft for the SDG pages. 
 
 
 ## Day [2] - Scrum Meeting summary - Video: https://www.youtube.com/watch?v=vJG6zvM16SA
@@ -86,6 +87,7 @@ Spent yesterday helping Daniel and Sameer with both the PHP and the database and
 Will work on fully setting up the database so that every page can access it and we have a reliable backend, which will help to speed up the development. 
 
 Alessandro:
+Yesterday, I improved the design of the existing SDG page to a state where we feel comfortable using them as a template. Today, I will contribute to creating the other pages 
 
 Scott: 
 I spent yesterday working on the website (story 20) and trying to add an edit button to the website to change information on the website (story 14) but ran into problems implementing it. The edit button needed the database running and we had trouble doing that yesterday. 
