@@ -1,3 +1,4 @@
 # Sprint 1 Backlog
 
-Your Sprint 1 backlog should be put into this folder.
+Our Sprint 1 backlog was made in a project: https://github.com/DanielJakubek/DeepFreeze3.0/projects/4
+We deemed this easier to read. 
