@@ -37,8 +37,10 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="Images\NoPoverttyBW.jpg" class="d-block w-100" alt="No Poverty" href="No-Poverty.html">
+                    <div class="col-md-4" href="No-Poverty.html">
+                      <a href="Software_Code/No-Poverty.html">
+                       <img src="Images\NoPoverttyBW.jpg" class="d-block w-100" alt="No Poverty">
+                      </a>
                     </div>
                     <div class="col-md-4">
                       <img src="Images\NoHungerBW.jpg" class="d-block w-100" alt="Zero Hunger">
