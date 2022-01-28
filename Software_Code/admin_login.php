@@ -8,30 +8,31 @@
 <body id="login">
 
     <div class="container">
-        <div class="row">
+        <div class="row" id="blank">
             <div class="col">
-                <div class="container">
-                    <div class="row align-items-center">
+                <div class="container" id="blank">
+                    <div class="row align-items-center" id="blank">
                         <div class="col">
-                            <h1>Admin Password Login Page</h1>
+                            <br><br><br><br><br>
+                            <h1>Admin Login Page</h1>
                             <div class="mb-3 row">
                                 <form action="login_security.php" method="post">
                                     <div class="mb-3 row">
-                                        <label for="inputUsername" class="col-sm-2 col-form-label">User</label>
+                                        <label for="inputUsername" class="col-sm-2 col-form-label">Username:</label>
                                         <div class="col-sm-10" id="User">
                                             <input type="string" class="form-control" id="inputUsername"
                                                 name="username">
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
-                                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">Password:</label>
                                         <div class="col-sm-10" id="Pass">
                                             <input type="password" class="form-control" id="inputPassword"
                                                 name="password">
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
-                                        <button type="button2" id="submit-button"
+                                        <button type="login" id="submit-button"
                                             class="btn btn-primary">Submit</button>
                                     </div>
                             </div>
@@ -42,7 +43,7 @@
             </div>
             <div class="col">
                 <div class="col">
-                    <img src="chunk.png" class="card-img-top" alt="...">
+                    <img src="logo.png" class="card-img-top" alt="Sustainable development logo" style="width: 100%; margin: 0.34in;">
                 </div>
             </div>
         </div>

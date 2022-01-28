@@ -1,6 +1,6 @@
     <?php
     
-    session_start();
+    if (!isset($_SESSION)) { session_start(); }
 
     function query($id){
         include("dbConnect.php");
@@ -21,7 +21,7 @@
     $password = '';
 
     if (isset($_POST['username'])) {
-        $_SESSION["username"] = $_POST['username']; //Probs not secure but oh well
+        $_SESSION["username"] = $_POST['username']; 
         $username = $_SESSION["username"];
     }
 
@@ -37,14 +37,19 @@
         if($password == $get_user[0]['password'])
         {
             $valid_session = true;
-            echo "You're now logged in";
+            echo "You're now logged in, Please wait...";
+            echo $valid_session;
         }
     }
 
     if($valid_session != true)
     {
         header("Location: admin_login.php");
-        die();
+    }
+    else if($valid_session == true)
+    {
+        $_SESSION["validsession"] = $valid_session;
+        header("Location: admin_page.php");
     }
     
 
