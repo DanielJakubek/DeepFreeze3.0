@@ -66,4 +66,15 @@ nav{
     width: 80px;
 }
 
+#background
+{
+  background-color: #ffffff;
+  background-image: radial-gradient(#8f8f8f 1.6px, #ffffff 1.6px);
+  background-size: 32px 32px;
+}
+
+#blank
+{
+  background-color: #ffffff;
+}
 
