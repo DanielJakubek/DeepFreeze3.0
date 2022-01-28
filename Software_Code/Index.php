@@ -38,15 +38,19 @@
                 <div class="carousel-item active">
                   <div class="row">
                     <div class="col-md-4" href="No-Poverty.html">
-                      <a href="Software_Code/No-Poverty.html">
+                      <a href="No-Poverty.html">
                        <img src="Images\NoPoverttyBW.jpg" class="d-block w-100" alt="No Poverty">
                       </a>
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\NoHungerBW.jpg" class="d-block w-100" alt="Zero Hunger">
+                      <a href="Zero-Hunger.html">
+                        <img src="Images\NoHungerBW.jpg" class="d-block w-100" alt="Zero Hunger">
+                      </a>
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\GoodHealthBW.jpg" class="d-block w-100" alt="...">
+                      <a href="OddPages/New folder/GH-WB.html">
+                       <img src="Images\GoodHealthBW.jpg" class="d-block w-100" alt="Good Health">
+                      </a>
                     </div>
                   </div>
                 </div>
