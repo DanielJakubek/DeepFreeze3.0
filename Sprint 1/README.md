@@ -1,12 +1,11 @@
 # Sprint 1
-===============================================================
-Main talking points to inspire the daily meetings were:
+
+# Main talking points to inspire the daily meetings were:
 
 1 – What did I do yesterday that helped the development team meet the sprint goal 
 2 – What are you working on today? 
 3 – What problems are you facing or may face in trying to achieve #1 
 ================================================================
---- + --- + --- + --- + --- + --- +--- + --- + --- + --- + --- +
 
 ## Day [1] - Scrum Meeting summary
 The Scrum Master for this meeting was **Sameer Al Harbi**
@@ -33,8 +32,6 @@ Will be working on azure hosting setup and assisting Daniel with story 20. Will 
  
 Alessandro  
 
---- + --- + --- + --- + --- + --- + --- + --- + --- + --- + --- +
---- + --- + --- + --- + --- + --- +--- + --- + --- + --- + --- +
 
 ## Day [2] - Scrum Meeting summary - Video: https://www.youtube.com/watch?v=vJG6zvM16SA
 The Scrum Master for this meeting was **Sameer Al Harbi**
@@ -67,8 +64,7 @@ I worked on the development of one of the 17 pages in the website, in the proces
 I’ll work on the design of the page, and consider whether it should be made less minimalistic, and if so, how. Then, time permitting, I’ll work on the design of other pages, to ensure that we can create a consistent model. 
 The page contains both paragraphs of text and a map, and I wasn’t able to figure out how to arrange for the text to not be overlapped by the map
 
---- + --- + --- + --- + --- + --- + --- + --- + --- + --- + --- +
---- + --- + --- + --- + --- + --- + --- + --- + --- + --- + --- +
+
 
 ## Day [3] - Scrum Meeting summary - Video: https://www.youtube.com/watch?v=vJG6zvM16SA
 The Scrum Master for this meeting was **Sameer Al Harbi**
@@ -102,8 +98,7 @@ Gregor
 I worked on finishing the template of the webpages and updating the map api. I also started filling in the information on the webpages but didn’t get very far.  
 Today I am hoping to make more progress on the rest of the 17 pages so that they will be ready for friday.  
 
---- + --- + --- + --- + --- + --- + --- + --- + --- + --- + --- +
---- + --- + --- + --- + --- + --- + --- + --- + --- + --- + --- +
+
 
 ## Day [4] - Scrum Meeting summary
 The Scrum Master for this meeting was **Sameer Al Harbi**
