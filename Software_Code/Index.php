@@ -77,14 +77,18 @@
                   <div class="row">
                     <div class="col-md-4">
                       <a href="OddPages/New folder/Energy.html">
-                      <img src="Images\cleanEnergyBW.jpg" class="d-block w-100" alt="Clean Energy">
+                       <img src="Images\cleanEnergyBW.jpg" class="d-block w-100" alt="Clean Energy">
                       </a> 
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\growthBW.jpg" class="d-block w-100" alt="...">
+                      <a href="Decent-Work-And-Economic-Growth copy.html"> 
+                       <img src="Images\growthBW.jpg" class="d-block w-100" alt="Growth">
+                      </a>
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\innovationBW.jpg" class="d-block w-100" alt="...">
+                      <a href="OddPages/New folder/Industry.html">
+                        <img src="Images\innovationBW.jpg" class="d-block w-100" alt="innovation">
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -119,39 +123,57 @@
                 <div class="carousel-item active">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="Images\redudcedBW.jpg" class="d-block w-100" alt="...">
+                      <a href="Reduced-Inequalities.html">
+                        <img src="Images\redudcedBW.jpg" class="d-block w-100" alt="Reduce">
+                      </a>
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\cityBW.jpg" class="d-block w-100" alt="...">
+                      <a href="OddPages/New folder/Cities-Comm.html">
+                        <img src="Images\cityBW.jpg" class="d-block w-100" alt="...">
+                      </a>
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\consumeBW.jpg" class="d-block w-100" alt="...">
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img src="Images\climateBW.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                      <img src="Images\waterBW.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                      <img src="Images\landBW.jpg" class="d-block w-100" alt="...">
+                      <a href="Responsible-Consumption-And-Production.html">
+                       <img src="Images\consumeBW.jpg" class="d-block w-100" alt="Consume">
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="Images\peaceBW.jpg" class="d-block w-100" alt="...">
+                      <a href="OddPages/New folder/Climate.html">
+                        <img src="Images\climateBW.jpg" class="d-block w-100" alt="Climate">
+                      </a>
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\goalsBW.jpg" class="d-block w-100" alt="...">
+                      <a href="LifeBelowWater.html">
+                        <img src="Images\waterBW.jpg" class="d-block w-100" alt="Water">
+                      </a>
                     </div>
                     <div class="col-md-4">
-                      <img src="Images\blankBW.jpg" class="d-block w-100" alt="...">
+                     <a href="LifeOnLand.html">
+                       <img src="Images\landBW.jpg" class="d-block w-100" alt="Life on land">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a href="PeaceAndJustice.html">
+                        <img src="Images\peaceBW.jpg" class="d-block w-100" alt="Peace">
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#"> 
+                        <img src="Images\goalsBW.jpg" class="d-block w-100" alt="Goals">
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#">
+                       <img src="Images\blankBW.jpg" class="d-block w-100" alt="...">
+                      </a>
                     </div>
                   </div>
                 </div>
