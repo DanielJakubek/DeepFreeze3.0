@@ -1,107 +1,85 @@
 
-/* Start of navigation */
+/* Navigation */
+#SustainNavImg{
 
-/* Navigation button and items*/
-nav button, nav a{
-  padding: 5px;
-  color: #D9DCD6 !important;
-  text-decoration: none;
-  border-radius: 4px;
+  margin: 0.35in;
+}
+
+nav img{
+  max-width: 40vh;
+}
+
+#noteBookPng{
+  max-width: 5vh;
+  margin-left: 25px;
+}
+
+nav #searchForm{
   border: none;
-  background-color: rgba(255,255,255,0); //* transparent bg */
+  border-bottom: black 3px solid;
+  width: 60%;
 }
 
-/* Items in nav bar on mouse hover */
-nav button:hover, nav a:hover:not(.navbar-brand) {
-   background-color: #81C3D7;
-   color: #16425B !important;
+nav form{
+  margin-right: 20px;
 }
 
-/* Dropdown menu in navbar */
-.dropdown-menu{
-  background-color: #16425B;
+
+/* Main content */
+.bg-image{
+  background-image: url('Images/bg2.png');
+  height: 400vh;
+}
+
+#intermissionArea{
+  height: 50vh;
+}
+
+/* Uses a semi-transparent img instead of using opacity */
+#carouselArea{
+  background-image: url('Images/sliderArea.png');
+  padding: 100px;
+
+}
+
+.carousel-item img{
+  border: 30px white solid;
+}
+
+.carousel-item img:hover{
+  border: 30px #C6025C solid;
+}
+
+.carousel-inner{
+  max-width: 83%;
+}
+
+#sliderCounter{
+  margin-top: 20px;
+}
+
+#sliderCounter button{
+  margin: 2px;
+  padding-left: 25px;
+  padding-top: 5px;
+}
+
+
+/* Footer */
+footer{
+  background-color: black;
+  color: white;
   text-align: center;
-  min-width: 135px;
-  border-color: #D9DCD6;
+  opacity: 0.9;
 }
 
-/* Button when nav bar is collapsed */
-.navbar-toggler{ background-color: #D9DCD6;}
-/* Spreads out the items */
- nav .nav-item{ padding-left: 5px; padding-right: 5px; }
-
-/* the nav bar itself */
-nav{
-  background-color: #16425B;
-  overflow: visible;
- }
-
-/* End of navigation */
-
-
-
-
-
-/* Start of index page */
-
- /* Container holding the image and the text */
-#welcomeSign {
-   position: relative;
-   text-align: center;
-   color: white;
-   padding-right: 0px;
-   padding-left: 0px;
- }
-
- /* Bottom left text */
- .bottom-left {
-   position: absolute;
-   bottom: 8px;
-   left: 16px;
-   color: white;
- }
-
-#contentBreak{
-  padding-bottom: 5px;
-  background-color: #049a9B;
+footer .row{
+  padding-top: 15px;
+  height: 200px;
 }
 
-#littleInformation{
-  text-align: center;
-  padding: 10px;
-}
-
-#carouselOfGoals{
-  text-align: center;
-  padding-left: 10vh;
-  padding-right: 10vh;
-}
-
-button{
-  background-color: red;
-}
-
-#carouselOfGoals img {
-  padding: 10px;
-}
-
-#carouselOfGoals span{
-  background-color: red;
-}
-
-
-
-*{
-  background-color: #;
-}
-
-
-/* End of index page */
-
-#AddNewItemContainer{
-  text-align: center;
-  padding: 10px;
-
+#copyrightText{
+  padding-bottom: 10px;
 }
 
 
@@ -114,52 +92,4 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* When screen size <990px */
- @media screen and (max-width: 990px) {
-   /* Spreads out the items */
-   nav .nav-link{ max-width: 15vh; }
-   nav a{ padding-left: 3px!important;}
-  /* Sign up and login in buttons */
-   nav #buttons .nav-item  {padding-top: 5px;}
- }
-
-
- /* When screen size <990px */
- @media screen and (max-width: 990px) {
-   /* Spreads out the items */
-   nav .nav-link{ max-width: 15vh; }
-   nav a{ padding-left: 3px!important;}
-  /* Sign up and login in buttons */
-   nav #buttons .nav-item  {padding-top: 5px;}
- }
-
- /* When screen size <990px */
- @media screen and (max-width: 680px) {
-   #carouselOfGoals img{max-width: 26vh;}
-
- }
+/* */
