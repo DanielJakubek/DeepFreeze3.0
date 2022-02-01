@@ -23,7 +23,7 @@
     #map {
       position: static;
       width: 100%;
-      height: 100%;
+      height: 50vh;
     }
 
     ;
@@ -68,7 +68,7 @@
   <div class="container">
     <div class="row">
       <div class="col clearfix">
-        <h1 class="text-center">Climate Action</h1>
+        <h1 class="text-center">Climate</h1>
         </br>
 
         <img src="13.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="height:300px; width:300px;">
@@ -98,26 +98,6 @@
     </div>
     <div class="row">
       <div class="col">
-        <p>
-           Dundee Community Fridge (Gate Church Carbon Saving Project) - The Community Fridge at Gate Church is a communal place where surplus food is shared, by local businesses and individuals. The community fridge helps to cut food waste, build bonds within the community and re-distribute good quality food. Although the focus is on  food waste, the Community Fridge also helps to reduce food poverty in Dundee. 
-        
-          <br>
-          <br>
-          Dundee Community Wardrobe (Gate Church Carbon Saving Project) - The Dundee Community Wardrobe helps to stop good quality clothing going in the bin and teaches people how to live more sustainably. Encourages people to reuse, repair and share. *Potential to visit*
-
-
-          <br>
-          <br>
-          Dundee Cycle Hub - The Dundee and Angus Cycle Hubs encourage people to lead healthier lives and reduce short car journeys and C02 emissions through cycling and recycling. They provide Bikeability training, bike hire, servicing and repairs and bike recycling.  
-
-
-          <br>
-          <br>
-
-        </p>
-
-      </div>
-      <div class="col">
         <div id='map'>
           <script>
             mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JlZ29yZG9vbSIsImEiOiJja3l1NjF4Z2wwM2MwMm50NHVqeG52c2Y0In0.KNoSFWWsfL7xrj2kAnwjpQ';
@@ -131,7 +111,7 @@
             //map.addControl(new mapboxgl.NavigationControl());
             map.on('load', function () {
 
-              map.addSource("dundee", {
+                map.addSource("dundee", {
                 "type": "geojson",
                   "data": {
                     "type": "FeatureCollection",
@@ -177,6 +157,7 @@
                     
                   })
 
+
         
 
               map.addLayer({
@@ -203,12 +184,50 @@
 
 
 
-
       </div>
     </div>
-  <!-- Map -->
-  <!-- How do you get this thing to float correctly in the text surrounding it? -->
-  
+
+
+    <div class="container" id="container2">
+      <div class="col">
+      <p>
+           Dundee Community Fridge (Gate Church Carbon Saving Project) - The Community Fridge at Gate Church is a communal place where surplus food is shared, by local businesses and individuals. The community fridge helps to cut food waste, build bonds within the community and re-distribute good quality food. Although the focus is on  food waste, the Community Fridge also helps to reduce food poverty in Dundee. 
+        
+          <br>
+          <br>
+          Dundee Community Wardrobe (Gate Church Carbon Saving Project) - The Dundee Community Wardrobe helps to stop good quality clothing going in the bin and teaches people how to live more sustainably. Encourages people to reuse, repair and share. *Potential to visit*
+
+
+          <br>
+          <br>
+          Dundee Cycle Hub - The Dundee and Angus Cycle Hubs encourage people to lead healthier lives and reduce short car journeys and C02 emissions through cycling and recycling. They provide Bikeability training, bike hire, servicing and repairs and bike recycling.  
+
+
+          <br>
+          <br>
+        </p>
+        <script>
+          //Deals with hiding and showing the form
+          function popUpWindow(){
+            var popUp = document.getElementById("infoPage");
+
+            if (popUp.style.display === "none") {
+              popUp.style.display = "block";
+            } else {
+              popUp.style.display = "none";
+            }
+          }
+
+        </script>
+
+        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+
+        <div class="infoPopup" id="infoPage" style="display: none;" >
+          <form action="/No-Poverty.php" class="infoContainer">
+            <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
+          </form>
+        </div>
+    </div>
 </div>
 </body>
 

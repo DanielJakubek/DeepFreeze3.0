@@ -23,7 +23,7 @@
     #map {
       position: static;
       width: 100%;
-      height: 100%;
+      height: 50vh;
     }
 
     ;
@@ -68,7 +68,7 @@
   <div class="container">
     <div class="row">
       <div class="col clearfix">
-        <h1 class="text-center">Good Health and Well Being</h1>
+      <h1 class="text-center">Good Health and Well Being</h1>
         </br>
 
         <img src="3.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="height:300px; width:300px;">
@@ -99,26 +99,11 @@
             Health workers are on the front line of the COVID-19 pandemic response. Countries and territories, especially those with a limited health workforce, are further constrained with regard to the delivery of essential health services. On the basis of data from the period 2013–2018, the density of nursing and midwifery personnel in Northern America is more than 150 per 10,000 population, which is more than 15 times that in sub-Saharan African and 8 times that in Northern Africa and Southern Asia. The density of medical doctors in Northern America, Oceania and Central Asia remains around 25 per 10,000 population, compared to 2 per 10,000 population in sub-Saharan African.
         </p>
 
+
        
       </div>
     </div>
     <div class="row">
-      <div class="col">
-        <p>
-          Embark Dundee - Ride On operates the e-bike sharing services in Dundee. The e-bikes provide a sustainable and affordable mobility solution for moving around the city.  
-          <br>
-          <br>
-          Ancrum Outdoor Centre - The Ancrum Centre offers taster sessions, days out, skills  development courses and coaching awards for people of all ages and abilities from the Dundee and wider Tayside region. Includes watersports, winter sports, cycling, climbing, hillwalking, first aid, team building and a group events. 
-          <br>
-          <br>
-          Aspire Programme Dundee - ASPIRE Dundee is a community engagement programme that uses performing arts across the curriculum to increase pupils’ health and wellbeing, self-confidence, self-esteem, learning and skills development.   
-          <br>
-          <br>
-          Dundee Cycle Hub - The Dundee and Angus Cycle Hubs encourage people to lead healthier lives and reduce short car journeys and C02 emissions through cycling and recycling. They provide Bikeability training, bike hire, servicing and repairs and bike recycling.  
-
-        </p>
-
-      </div>
       <div class="col">
         <div id='map'>
           <script>
@@ -133,7 +118,7 @@
             //map.addControl(new mapboxgl.NavigationControl());
             map.on('load', function () {
 
-              map.addSource("dundee", {
+                map.addSource("dundee", {
                 "type": "geojson",
                   "data": {
                     "type": "FeatureCollection",
@@ -179,6 +164,7 @@
                     
                   })
 
+
         
 
               map.addLayer({
@@ -204,11 +190,48 @@
 
 
 
+
       </div>
     </div>
-  <!-- Map -->
-  <!-- How do you get this thing to float correctly in the text surrounding it? -->
-  
+
+
+    <div class="container" id="container2">
+      <div class="col">
+      <p>
+          Embark Dundee - Ride On operates the e-bike sharing services in Dundee. The e-bikes provide a sustainable and affordable mobility solution for moving around the city.  
+          <br>
+          <br>
+          Ancrum Outdoor Centre - The Ancrum Centre offers taster sessions, days out, skills  development courses and coaching awards for people of all ages and abilities from the Dundee and wider Tayside region. Includes watersports, winter sports, cycling, climbing, hillwalking, first aid, team building and a group events. 
+          <br>
+          <br>
+          Aspire Programme Dundee - ASPIRE Dundee is a community engagement programme that uses performing arts across the curriculum to increase pupils’ health and wellbeing, self-confidence, self-esteem, learning and skills development.   
+          <br>
+          <br>
+          Dundee Cycle Hub - The Dundee and Angus Cycle Hubs encourage people to lead healthier lives and reduce short car journeys and C02 emissions through cycling and recycling. They provide Bikeability training, bike hire, servicing and repairs and bike recycling.  
+
+        </p>
+        <script>
+          //Deals with hiding and showing the form
+          function popUpWindow(){
+            var popUp = document.getElementById("infoPage");
+
+            if (popUp.style.display === "none") {
+              popUp.style.display = "block";
+            } else {
+              popUp.style.display = "none";
+            }
+          }
+
+        </script>
+
+        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+
+        <div class="infoPopup" id="infoPage" style="display: none;" >
+          <form action="/No-Poverty.php" class="infoContainer">
+            <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
+          </form>
+        </div>
+    </div>
 </div>
 </body>
 
