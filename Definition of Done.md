@@ -8,3 +8,4 @@
 - There are no real graphical issues or bugs present.
 - Code is reviewed by pier
 - Code is reviewed by product owner.
+- The code is commented to an acceptable level.
