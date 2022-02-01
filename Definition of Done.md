@@ -6,3 +6,5 @@
 - The code follows camelCase.  
 - The page layout is comprehensive.
 - There are no real graphical issues or bugs present.
+- Code is reviewed by pier
+- Code is reviewed by product owner.
