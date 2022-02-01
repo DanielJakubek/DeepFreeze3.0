@@ -127,3 +127,21 @@ nav{
   /* Sign up and login in buttons */
    nav #buttons .nav-item  {padding-top: 5px;}
  }
+
+ .infoPopup {
+   position: relative;
+   bottom: 0;
+   z-index: 10;
+   width: 200%;
+
+ }
+ .infoContainer {
+  width: 30%;
+  height: 100%;
+  background: white;
+  padding: 5px;
+ }
+
+ .container2{
+   width:100%;
+ }
