@@ -82,8 +82,12 @@ footer .row{
   padding-bottom: 10px;
 }
 
-
-
+#background-grid{
+  background-color: #ffffff;
+  opacity: 1;
+  background-image:  linear-gradient(#f4f4f4 2.8000000000000003px, transparent 2.8000000000000003px), linear-gradient(to right, #f4f4f4 2.8000000000000003px, #ffffff 2.8000000000000003px);
+  background-size: 56px 56px;
+}
 
 
 
