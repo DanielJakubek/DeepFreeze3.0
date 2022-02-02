@@ -3,7 +3,7 @@
     if (!isset($_SESSION)) { session_start(); }
 
     function query($id){
-        include("dbConnect.php");
+        include("Include\dbConnect.php");
         $sql = "SELECT * FROM accounts WHERE username LIKE '$id'";
     
         $rows = array();
@@ -44,13 +44,13 @@
 
     if($valid_session != true)
     {
-        header("Location: admin_login.php");
+        header("Location: Admin\admin_login.php");
         die();
     }
     else if($valid_session == true)
     {
         $_SESSION["validSession"] = $valid_session;
-        header("Location: admin_page.php");
+        header("Location: Admin\admin_page.php");
         die();
     }
     
