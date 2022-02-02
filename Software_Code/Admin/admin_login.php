@@ -28,7 +28,7 @@
                             <br><br><br><br><br>
                             <h1>Admin Login Page</h1>
                             <div class="mb-3 row">
-                                <form action="login_security.php" method="post">
+                                <form action="Admin\login_security.php" method="post">
                                     <div class="mb-3 row">
                                         <label for="inputUsername" class="col-sm-2 col-form-label">Username:</label>
                                         <div class="col-sm-10" id="User">
