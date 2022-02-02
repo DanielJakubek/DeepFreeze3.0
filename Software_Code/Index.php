@@ -59,7 +59,7 @@
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
-                                <img src="Images\1.jpg" class="d-block w-100" alt="No Poverty">
+                                <img src="Images/1.jpg" class="d-block w-100" alt="No Poverty">
                               </div>
                               <div class="flip-card-back" style="background-color: #C92137;">
                                 <h1>No Poverty</h1>
@@ -653,7 +653,7 @@
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <div class = "map" id="map" style="height:100%">
               <script>
-                loadMap("map", <?php 
+                loadMap("map", <?php
                   require_once("Include/load_map.php");
                   load_map("all");
                 ?>)
@@ -666,16 +666,6 @@
     </footer>
 
   </body>
-
-
-
-
-
-
-
-
-
-
 
   <!-- JavaScript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
