@@ -10,3 +10,4 @@
 - Code is reviewed by product owner.
 - The code is commented to an acceptable level.
 - Subtasks have been completed.
+- The page is responsive enough to give the user a good mobile experience.
