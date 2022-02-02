@@ -1,22 +1,33 @@
-# Sprint 1
+# Sprint 2
 
-All information about your first sprint should be put into this folder. Additionally, the information below should be updated to give a short summary of your daily scrum meetings.
+Summary of all Scrum meetings performed during Sprint 2, Scrum Master is Sameer. All members attended the meeting unless otherwise stated.
 
 ---
 
-## Day [X] - Scrum Meeting summary
-The Scrum Master for this meeting was **Mike Crabb**
+## Day [1] - Scrum Meeting summary
 
-### Members Present:
-Mike, Rachel, information
+---
 
-### Members Not Present:
-Naughty Student 1, Naughty Student 2
+---
 
-### Apologies:
-Ill Student 1.
+## Day [2] - Scrum Meeting summary
 
-### Summary of Conversation:
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+| Sameer  | Adrian | Daniel | Scott | Gregor | Alessandro
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  |               |               |               |               |
+| Content Cell  | Content Cell  |               |               |               |               |
+
+---
+
+---
+
+## Day [3] - Scrum Meeting summary
+
+---
+
+---
+
+## Day [4] - Scrum Meeting summary
 
 ---
