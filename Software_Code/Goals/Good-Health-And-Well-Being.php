@@ -130,7 +130,7 @@
           <script>
             loadMap("map", <?php
               require_once("../Include/load_map.php");
-              load_map(15);
+              load_map(3);
             ?>);
           </script>
         </div>
