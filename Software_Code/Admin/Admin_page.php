@@ -28,7 +28,7 @@ if (isset($_SESSION['validSession'])) {
 //Create a new database entry for the new user
 function createNewUser($name, $pass)
 {
-    include("Include\dbconnect.php");
+    include("..\Include\dbconnect.php");
 
     //Updates the table
     $query = "INSERT INTO accounts (`username`, `password`) VALUES ('$name', '$pass');";
