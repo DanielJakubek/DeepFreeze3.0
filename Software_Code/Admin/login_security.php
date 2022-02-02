@@ -3,7 +3,7 @@
     if (!isset($_SESSION)) { session_start(); }
 
     function query($id){
-        include("Include\dbConnect.php");
+        include("..\Include\dbConnect.php");
         $sql = "SELECT * FROM accounts WHERE username LIKE '$id'";
     
         $rows = array();
