@@ -16,6 +16,11 @@ Summary of all Scrum meetings performed during Sprint 2, Scrum Master is Sameer.
 ## Day [1] - Scrum Meeting summary
 
 
+|Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+|#1 |               |               |               |               |               |               |
+|#2 |               |               |               |               |               |               |
+|#3 |               |               |               |               |               |               |
 
 ---
 
@@ -36,10 +41,24 @@ Summary of all Scrum meetings performed during Sprint 2, Scrum Master is Sameer.
 
 ## Day [3] - Scrum Meeting summary
 
+
+|Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+|#1 |               |               |               |               |               |               |
+|#2 |               |               |               |               |               |               |
+|#3 |               |               |               |               |               |               |
+
 ---
 
 ---
 
 ## Day [4] - Scrum Meeting summary
+
+
+|Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+|#1 |               |               |               |               |               |               |
+|#2 |               |               |               |               |               |               |
+|#3 |               |               |               |               |               |               |
 
 ---
