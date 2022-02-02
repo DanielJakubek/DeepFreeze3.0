@@ -73,7 +73,7 @@ createNewUser($newUsername, $newPassword);
         <div class="card text-dark bg-light mb-3" style='margin: 5%'>
             <div class="row justify-content-start">
                 <div class="col-4">
-                    <div class="card-body">
+                    <div class="card-body" style="width: 300px;">
                         <img src="userprofile.png" class="card-img-top" alt="Default profile image"
                             style="width: 200px; padding-left: 0%; padding-right: 64px;">
                         <br><br>
@@ -81,12 +81,13 @@ createNewUser($newUsername, $newPassword);
                         <h5> Welcome <?php echo $_SESSION['username']; ?> </h5>
                     </div>
                 </div>
-                <div class="col-4" style="padding-top: 8px;">
-                    <button style='margin: 5%; width: 264px;' class="btn btn-primary" onclick="openUserPanel();">Create a
+                <div class="col-4" style="padding-top: 8px; margin-left: 10px;">
+                    <button style='margin: 5%; width: 242px;' class="btn btn-primary" onclick="openUserPanel();">Create
+                        a
                         new Admin User</button>
-                    <button style='margin: 5%; width: 264px;' class="btn btn-primary" onclick="openTab();">Edit
+                    <button style='margin: 5%; width: 242px;' class="btn btn-primary" onclick="openTab();">Edit
                         Website</button>
-                    <button style='margin: 5%; width: 264px;' class="btn btn-danger"
+                    <button style='margin: 5%; width: 242px;' class="btn btn-danger"
                         onclick="location.assign('admin_login.php');"> Log Out</button>
                 </div>
             </div>
@@ -97,20 +98,20 @@ createNewUser($newUsername, $newPassword);
         <div class="card text-dark bg-light mb-3" style='margin: 5%'>
             <div class="row justify-content-start">
                 <div class="col-4">
-                    <div class="card-body">
-                        <form action="Admin_page.php" method="post">
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">New Username</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" name="newUsername">
-                                <div id="emailHelp" class="form-text"> Please only input A-Z without any numbers
-                                </div>
+                    <div class="card-body" style="width: 300px;>
+                        <form action=" Admin_page.php" method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">New Username</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                name="newUsername">
+                            <div id="emailHelp" class="form-text"> Please only input A-Z without any numbers
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">New Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" name="newPassword">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="newPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -124,52 +125,56 @@ createNewUser($newUsername, $newPassword);
                 <div class="col-4" id='panel'>
                     <div class="card-body" id='panel'>
 
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu overflow-auto" aria-labelledby="dropdownMenuButton1"
-                                style="height: 500px; width: 200px;">
-                                <li><a class="dropdown-item" href="#">Poverty</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <div class="container">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu overflow-auto" aria-labelledby="dropdownMenuButton1"
+                                    style="height: 500px; width: 200px;">
+                                    <li><a class="dropdown-item" href="#">Poverty</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu overflow-auto" aria-labelledby="dropdownMenuButton1"
-                                style="height: 500px; width: 200px;">
-                                <li><a class="dropdown-item" href="#">Poverty</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <div class="container" style="margin-top: 25px;">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu overflow-auto" aria-labelledby="dropdownMenuButton1"
+                                    style="height: 500px; width: 200px;">
+                                    <li><a class="dropdown-item" href="#">Poverty</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-4" id='panel'>
-                    <div class="card-body" id='panel'>
+                <div class="col-7" id='panel'>
+                    <div class="card-body" id='panel' style="margin-left: 60px">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                            style='width: 700px;'></textarea>
+                            style='width: 100%;'></textarea>
                     </div>
                 </div>
             </div>
