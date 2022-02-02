@@ -97,6 +97,7 @@ if($valid == true){
 
 <body id="background-grid">
 
+    <!-- Displays the main dashboard for the admin, with buttons for editing, making a new admin or logging out. -->
     <div class="container">
         <div class="card text-dark bg-light mb-3" style='margin: 5%'>
             <div class="row justify-content-start">
@@ -122,6 +123,7 @@ if($valid == true){
         </div>
     </div>
 
+    <!-- Displays a dashboard for adding a new admin, containing two text boxes to enter a username and password, and a submit button. -->
     <div class="container" id='userpanel'>
         <div class="card text-dark bg-light mb-3" style='margin: 5%'>
             <div class="row justify-content-start">
@@ -146,7 +148,8 @@ if($valid == true){
             </div>
         </div>
     </div>
-
+  
+    <!-- Displays a dashboard for editing pages, with two dropdown boxes to choose a page and a section, and a text box to input the replacement. -->
     <div class="container" id='panel'>
         <div class="card text-dark bg-light mb-3" style='margin: 5%' id='panel'>
             <div class="row justify-content-start" id='panel'>
@@ -216,7 +219,8 @@ if($valid == true){
     document.getElementById('userpanel').style.display = 'none';
     var tab = false;
     var userPanel = false;
-
+    
+    <!-- Checks if the edit button has been pressed, and if so opens its dashboard. -->
     function openTab() {
         if (tab == false) {
             document.getElementById('panel').style.display = 'block';
@@ -226,7 +230,8 @@ if($valid == true){
             tab = false;
         }
     }
-
+    
+    <!-- Checks if the create user button has been pressed, and if so opens its dashboard. -->
     function openUserPanel() {
         if (userPanel == false) {
             document.getElementById('userpanel').style.display = 'block';
