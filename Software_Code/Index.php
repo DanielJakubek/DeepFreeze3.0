@@ -654,7 +654,7 @@
             <div class = "map" id="map" style="height:100%">
               <script>
                 loadMap("map", <?php 
-                  require_once("include/load_map.php");
+                  require_once("Include/load_map.php");
                   load_map("all");
                 ?>)
               </script>
