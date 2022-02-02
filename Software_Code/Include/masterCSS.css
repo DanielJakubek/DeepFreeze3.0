@@ -62,7 +62,7 @@ p,u{ font-family: 'Roboto' !important; }
 }
 
 #carouselArea{
-  background-image: url('Images/sliderArea.png');
+  background-image: url('../Images/sliderArea.png');
   padding: 100px;
 }
 
@@ -197,4 +197,3 @@ footer .row{
 .container2{
   width:100%;
 }
-
