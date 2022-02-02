@@ -49,7 +49,7 @@
     }
     else if($valid_session == true)
     {
-        $_SESSION["validsession"] = $valid_session;
+        $_SESSION["validSession"] = $valid_session;
         header("Location: admin_page.php");
         die();
     }
