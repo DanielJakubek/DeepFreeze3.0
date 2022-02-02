@@ -110,6 +110,7 @@
           Conservation areas such as Broughty Ferry:
           <ul>
             <li>Broughty Ferry</li>
+
             <li>West Ferry</li>
           </ul>
           <br>
@@ -189,13 +190,53 @@
 
           </script>
         </div>
-
-
-
-
-
       </div>
     </div>
+
+
+    <div class="container" id="container2">
+      <div class="col">
+<<<<<<< HEAD
+=======
+        <p>
+          Dundee Bairns is a charity working to benefit children in Dundee, addressing inequality in basic needs such as food and clothing.
+          <br>
+          <br>
+          Dundee Fighting for Fairness is a charity to voice for people in poverty in Dundee.
+          <br>
+          <br>
+          Positive Steps Partnership is a that charity provides supported accommodation services for vulnerable adults
+          <br>
+          <br>
+          FareShare Dundee provides support to homeless and vulnerable individuals and offers training and volunteering opportunities. One of their projects - Transform Furniture - is a community based project that works towards overcoming poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amount of household goods that end up in landfill.
+        </p>
+>>>>>>> 9a33fb3939f6f3326e1496e853b4e1ca25dcfbef
+        <script>
+          //Deals with hiding and showing the form
+          function popUpWindow(){
+            var popUp = document.getElementById("infoPage");
+
+            if (popUp.style.display === "none") {
+              popUp.style.display = "block";
+            } else {
+              popUp.style.display = "none";
+            }
+          }
+
+        </script>
+<<<<<<< HEAD
+=======
+
+        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+
+        <div class="infoPopup" id="infoPage" style="display: none;" >
+          <form action="/No-Poverty.php" class="infoContainer">
+            <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
+          </form>
+        </div>
+>>>>>>> 9a33fb3939f6f3326e1496e853b4e1ca25dcfbef
+    </div>
+</div>
   <!-- Map -->
   <!-- How do you get this thing to float correctly in the text surrounding it? -->
 

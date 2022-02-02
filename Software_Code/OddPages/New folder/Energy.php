@@ -23,7 +23,7 @@
     #map {
       position: static;
       width: 100%;
-      height: 100%;
+      height: 50vh;
     }
 
     ;
@@ -100,29 +100,6 @@
     </div>
     <div class="row">
       <div class="col">
-        <p>
-           MSIP - "Michelin Scotland Innovation Parc - a world class innovation parc in Dundee for sustainable mobility and decarbonisation. 
-        
-          <br>
-          <br>
-          MVV Environment Baldovie - Energy from waste facility - may be able to offer tours/ open days. Opportunity to learn about biomass/ energy from waste
-
-          <br>
-          <br>
-          Princes Street Charging Hub - EV charging hub with solar canopies. 
-          Queen Street Charging Hub - EV charging hub with solar canopies.
-
-
-          <br>
-          <br>
-          Multi Storey car parks (MSPs) - Green Market, Olympia and Gellatly Street MSP's all have EV charging points. These sites encourage commuters to charge during the day and nearby residents to charge their EV at night.
-
-
-
-        </p>
-
-      </div>
-      <div class="col">
         <div id='map'>
           <script>
             mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JlZ29yZG9vbSIsImEiOiJja3l1NjF4Z2wwM2MwMm50NHVqeG52c2Y0In0.KNoSFWWsfL7xrj2kAnwjpQ';
@@ -136,7 +113,7 @@
             //map.addControl(new mapboxgl.NavigationControl());
             map.on('load', function () {
 
-              map.addSource("dundee", {
+                map.addSource("dundee", {
                 "type": "geojson",
                   "data": {
                     "type": "FeatureCollection",
@@ -193,7 +170,6 @@
                   
                     
                   })
-
         
 
               map.addLayer({
@@ -220,12 +196,54 @@
 
 
 
-
       </div>
     </div>
-  <!-- Map -->
-  <!-- How do you get this thing to float correctly in the text surrounding it? -->
-  
+
+
+    <div class="container" id="container2">
+      <div class="col">
+      <p>
+           MSIP - "Michelin Scotland Innovation Parc - a world class innovation parc in Dundee for sustainable mobility and decarbonisation. 
+        
+          <br>
+          <br>
+          MVV Environment Baldovie - Energy from waste facility - may be able to offer tours/ open days. Opportunity to learn about biomass/ energy from waste
+
+          <br>
+          <br>
+          Princes Street Charging Hub - EV charging hub with solar canopies. 
+          Queen Street Charging Hub - EV charging hub with solar canopies.
+
+
+          <br>
+          <br>
+          Multi Storey car parks (MSPs) - Green Market, Olympia and Gellatly Street MSP's all have EV charging points. These sites encourage commuters to charge during the day and nearby residents to charge their EV at night.
+
+
+
+        </p>
+        <script>
+          //Deals with hiding and showing the form
+          function popUpWindow(){
+            var popUp = document.getElementById("infoPage");
+
+            if (popUp.style.display === "none") {
+              popUp.style.display = "block";
+            } else {
+              popUp.style.display = "none";
+            }
+          }
+
+        </script>
+
+        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+
+        <div class="infoPopup" id="infoPage" style="display: none;" >
+          <form action="/No-Poverty.php" class="infoContainer">
+            <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
+          </form>
+        </div>
+    </div>
 </div>
 </body>
 

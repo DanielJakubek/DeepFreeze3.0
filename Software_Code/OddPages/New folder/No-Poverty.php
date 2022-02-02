@@ -23,7 +23,7 @@
     #map {
       position: static;
       width: 100%;
-      height: 100%;
+      height: 50vh;
     }
 
     ;
@@ -92,28 +92,13 @@
         <p>
           In 2019, 12,000 disaster fatalities were reported across 72 reporting countries and territories. This is a significant reduction on the figure for 2018, when disaster mortality reported by 105 countries and territories reached a total of 125,000, and is in line with the overall trend in mortality that has been declining since 2005. On the basis of the latest reports submitted as part of the monitoring process under the Sendai Framework for Disaster Risk Reduction 2015–2030, direct economic losses of $9.3 billion were reported for 2019 by 67 countries and territories, of which 68 per cent or $6.4 billion was recorded for the agricultural sector. 18. Only 30 per cent of all countries and territories with data for the period 2015 – 2018 spent between 15 and 20 per cent of total government expenditure on education, as recommended in the Framework for Action for the implementation of Sustainable Development Goal 4.
 
-Total ODA grants for basic social services and development food aid, which are intended for poverty reduction, represented 0.02 per cent of the gross national income of donors to the Development Assistance Committee in 2019.
+          Total ODA grants for basic social services and development food aid, which are intended for poverty reduction, represented 0.02 per cent of the gross national income of donors to the Development Assistance Committee in 2019.
         </p>
 
        
       </div>
     </div>
     <div class="row">
-      <div class="col">
-        <p>
-          Dundee Bairns is a charity working to benefit children in Dundee, addressing inequality in basic needs such as food and clothing.
-          <br>
-          <br>
-          Dundee Fighting for Fairness is a charity to voice for people in poverty in Dundee. 
-          <br>
-          <br>
-          Positive Steps Partnership is a that charity provides supported accommodation services for vulnerable adults
-          <br>
-          <br>
-          FareShare Dundee provides support to homeless and vulnerable individuals and offers training and volunteering opportunities. One of their projects - Transform Furniture - is a community based project that works towards overcoming poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amount of household goods that end up in landfill. 
-        </p>
-
-      </div>
       <div class="col">
         <div id='map'>
           <script>
@@ -214,9 +199,44 @@ Total ODA grants for basic social services and development food aid, which are i
 
       </div>
     </div>
-  <!-- Map -->
-  <!-- How do you get this thing to float correctly in the text surrounding it? -->
-  
+
+
+    <div class="container" id="container2">
+      <div class="col">
+        <p>
+          Dundee Bairns is a charity working to benefit children in Dundee, addressing inequality in basic needs such as food and clothing.
+          <br>
+          <br>
+          Dundee Fighting for Fairness is a charity to voice for people in poverty in Dundee. 
+          <br>
+          <br>
+          Positive Steps Partnership is a that charity provides supported accommodation services for vulnerable adults
+          <br>
+          <br>
+          FareShare Dundee provides support to homeless and vulnerable individuals and offers training and volunteering opportunities. One of their projects - Transform Furniture - is a community based project that works towards overcoming poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amount of household goods that end up in landfill. 
+        </p>
+        <script>
+          //Deals with hiding and showing the form
+          function popUpWindow(){
+            var popUp = document.getElementById("infoPage");
+
+            if (popUp.style.display === "none") {
+              popUp.style.display = "block";
+            } else {
+              popUp.style.display = "none";
+            }
+          }
+
+        </script>
+
+        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+
+        <div class="infoPopup" id="infoPage" style="display: none;" >
+          <form action="/No-Poverty.php" class="infoContainer">
+            <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
+          </form>
+        </div>
+    </div>
 </div>
 </body>
 

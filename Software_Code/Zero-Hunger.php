@@ -137,7 +137,31 @@
         <div id='map'>
           <script src="scripts/Zero-Hunger-map.js"></script>
         </div>
-        <sub>Information about the map</sub>
+        <div class="container" id="container2">
+          <div class="col">
+            <script>
+              //Deals with hiding and showing the form
+              function popUpWindow(){
+                var popUp = document.getElementById("infoPage");
+
+                if (popUp.style.display === "none") {
+                  popUp.style.display = "block";
+                } else {
+                  popUp.style.display = "none";
+                }
+              }
+
+            </script>
+
+            <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+
+            <div class="infoPopup" id="infoPage" style="display: none;" >
+              <form action="/No-Poverty.php" class="infoContainer">
+                <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
+              </form>
+            </div>
+        </div>
+    </div>
       </div>
     </div>
   </div>
