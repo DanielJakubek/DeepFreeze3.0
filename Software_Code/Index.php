@@ -12,6 +12,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="Include/masterCSS.css">
 
+    <!-- MAP -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+    <script src="scripts/maps.js"></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
     <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Index</title>
   </head>
@@ -645,8 +650,15 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">Sample Text
-
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <div class = "map" id="map" style="height:100%">
+              <script>
+                loadMap("map", <?php 
+                  require_once("include/load_map.php");
+                  load_map("all");
+                ?>)
+              </script>
+            </div>
           </div>
         </div>
       </div>
