@@ -1,9 +1,6 @@
 <?php
     function load_map($page_num) {
-        $db = new mysqli("localhost", "daniel", "123", "localdb");
-        if(!$db) {
-            die("Database connect error: " . mysqli_connect_errno());
-        }
+          include "dbconnect.php";
 
         if($page_num == "all") {
             $sql = "SELECT * FROM maplocation";
