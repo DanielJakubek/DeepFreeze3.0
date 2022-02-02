@@ -55,7 +55,7 @@
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-lg-6">
-                        <a href="OddPages/New folder/No-Poverty.html">
+                        <a href="Goals/No-Poverty.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -73,7 +73,7 @@
                         </a>
                       </div>
                       <div class="col-lg-6">
-                        <a href="Zero-Hunger.html">
+                        <a href="Goals/Zero-Hunger.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -96,7 +96,7 @@
                   <div class="carousel-item">
                     <div class="row">
                       <div class="col-lg-6">
-                        <a href="OddPages/New folder/GH-WB.html">
+                        <a href="Goals\Good-Health-And-Well-Being.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -114,7 +114,7 @@
                         </a>
                       </div>
                       <div class="col-lg-6">
-                        <a href="Quality-Education.html">
+                        <a href="Goals\Quality-Education.php">
                          <div class="flip-card">
                            <div class="flip-card-inner">
                              <div class="flip-card-front">
@@ -138,7 +138,7 @@
                   <div class="carousel-item">
                     <div class="row">
                       <div class="col-lg-6">
-                        <a href="OddPages/New folder/GenderEquality.html">
+                        <a href="Goals\Gender-Equality.php">
                          <div class="flip-card">
                            <div class="flip-card-inner">
                              <div class="flip-card-front">
@@ -156,7 +156,7 @@
                         </a>
                       </div>
                       <div class="col-lg-6">
-                        <a href="OddPages/New folder/water.html">
+                        <a href="Goals\Clean-Water-And-Sanitation.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -179,7 +179,7 @@
                   <div class="carousel-item">
                     <div class="row">
                       <div class="col-lg-6">
-                        <a href="OddPages/New folder/Energy.html">
+                        <a href="Goals\Clean-Energy.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -198,7 +198,7 @@
                       </div>
 
                       <div class="col-lg-6">
-                        <a href="Decent-Work-And-Economic-Growth copy.html">
+                        <a href="Goals\Decent-Work-And-Economic-Growth.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -248,47 +248,47 @@
               <div class="d-flex justify-content-center">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <a href="OddPages/New folder/No-Poverty.html">
+                    <a href="Goals\No-Poverty.php">
                       <img src="Images\1.jpg" class="d-block w-100" alt="No Poverty">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="Zero-Hunger.html">
+                    <a href="Goals\Zero-Hunger.php">
                       <img src="Images\2.jpg" class="d-block w-100" alt="Zero Hunger">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="OddPages/New folder/GH-WB.html">
+                    <a href="Goals\Good-Health-And-Well-Being.php">
                       <img src="Images\3.jpg" class="d-block w-100" alt="Good Health">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="Quality-Education.html">
+                    <a href="Goals\Quality-Education.php">
                       <img src="Images\4.jpg" class="d-block w-100" alt="Education">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="OddPages/New folder/GenderEquality.html">
+                    <a href="Goals\Gender-Equality.php">
                       <img src="Images\5.jpg" class="d-block w-100" alt="Gender Equality">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="Clean-Water-And-Sanitation.html">
+                    <a href="Goals\Clean-Water-And-Sanitation.php">
                       <img src="Images\6.jpg" class="d-block w-100" alt="Clean Water">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="OddPages/New folder/Energy.html">
+                    <a href="Goals\Clean-Energy.php">
                       <img src="Images\7.jpg" class="d-block w-100" alt="Clean Energy">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="Decent-Work-And-Economic-Growth copy.html">
+                    <a href="Goals\Decent-Work-And-Economic-Growth.php">
                       <img src="Images\8.jpg" class="d-block w-100" alt="Growth">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="OddPages/New folder/Industry.html">
+                    <a href="Goals\Industry-Innovation-And-Infrastructure.php">
                       <img src="Images\9.jpg" class="d-block w-100" alt="innovation">
                     </a>
                   </div>
@@ -336,7 +336,7 @@
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-lg-6">
-                        <a href="OddPages/New folder/Industry.html">
+                        <a href="Goals\Industry-Innovation-And-Infrastructure.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -354,7 +354,7 @@
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a href="Reduced-Inequalities.html">
+                        <a href="Goals\Reduced-Inequalities.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -377,11 +377,11 @@
                   <div class="carousel-item">
                     <div class="row">
                       <div class="col-md-6">
-                        <a href="OddPages/New folder/Cities-Comm.html">
+                        <a href="Goals\Sustainable-Cities-And-Communities.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
-                                  <img src="Images\11.jpg" class="d-block w-100" alt="...">
+                                  <img src="Images\11.jpg" class="d-block w-100" alt="communities">
                               </div>
                               <div class="flip-card-back" style="background-color: #DA8B27;">
                                 <h1>Sustainable cites and communities</h1>
@@ -395,7 +395,7 @@
                         </a>
                       </div>
                       <div class="col-lg-6">
-                        <a href="Responsible-Consumption-And-Production.html">
+                        <a href="Goals\Responsible-Consumption-And-Production.php">
                          <div class="flip-card">
                            <div class="flip-card-inner">
                              <div class="flip-card-front">
@@ -418,7 +418,7 @@
                   <div class="carousel-item">
                     <div class="row">
                       <div class="col-lg-6">
-                        <a href="OddPages/New folder/Climate.html">
+                        <a href="Goals\Climate-Action.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -437,11 +437,11 @@
                       </div>
 
                       <div class="col-lg-6">
-                        <a href="LifeBelowWater.html">
+                        <a href="Goals\Life-Below-Water.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
-                                <img src="Images\14.jpg" class="d-block w-100" alt="Water">
+                                <img src="Images\14.jpg" class="d-block w-100" alt="Life Below Water">
                               </div>
                               <div class="flip-card-back" style="background-color: #1D85BA;">
                                 <h1>Life Below Water</h1>
@@ -460,7 +460,7 @@
                   <div class="carousel-item">
                     <div class="row">
                       <div class="col-lg-6">
-                       <a href="LifeOnLand.html">
+                       <a href="Goals\Life-On-Land.php">
                          <div class="flip-card">
                            <div class="flip-card-inner">
                              <div class="flip-card-front">
@@ -479,7 +479,7 @@
                       </div>
 
                       <div class="col-lg-6">
-                        <a href="PeaceAndJustice.html">
+                        <a href="Goals\Peace-And-Justice.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -501,7 +501,7 @@
                   <div class="carousel-item">
                     <div class="d-flex justify-content-center">
                       <div class="col-lg-6">
-                        <a href="#">
+                        <a href="Goals\Partnerships-For-The-Goals.php">
                           <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
@@ -552,42 +552,42 @@
               <div class="d-flex justify-content-center">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <a href="Reduced-Inequalities.html">
+                    <a href="Goals\Reduced-Inequalities.php">
                       <img src="Images\10.jpg" class="d-block w-100" alt="Reduce">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="OddPages/New folder/Cities-Comm.html">
-                      <img src="Images\11.jpg" class="d-block w-100" alt="...">
+                    <a href="Goals\Sustainable-Cities-And-Communities.php">
+                      <img src="Images\11.jpg" class="d-block w-100" alt="Communities">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="Responsible-Consumption-And-Production.html">
+                    <a href="Goals\Responsible-Consumption-And-Production.php">
                       <img src="Images\12.jpg" class="d-block w-100" alt="Consume">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="OddPages/New folder/Climate.html">
+                    <a href="Goals\Climate-Action.php">
                       <img src="Images\13.jpg" class="d-block w-100" alt="Climate">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="LifeBelowWater.html">
-                      <img src="Images\14.jpg" class="d-block w-100" alt="Water">
+                    <a href="Goals\Life-Below-Water.php">
+                      <img src="Images\14.jpg" class="d-block w-100" alt="Life Below water">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="LifeOnLand.html">
+                    <a href="Goals\Life-On-Land.php">
                       <img src="Images\15.jpg" class="d-block w-100" alt="Life on land">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="PeaceAndJustice.html">
+                    <a href="Goals\Peace-And-Justice.php">
                       <img src="Images\16.jpg" class="d-block w-100" alt="Peace">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="#">
+                    <a href="Goals\Partnerships-For-The-Goals.php">
                       <img src="Images\17.jpg" class="d-block w-100" alt="Goals">
                     </a>
                   </div>
@@ -620,22 +620,13 @@
             <h3>-Collaborative partnerships between public and private sector</h3>
             <h3>-Creating a knowledge and skills base</h3>
             <h3> -A secure local energy supply which supports the local economy</h3>
-
-
-
           </div>
         </div>
-
       </div>
-
-
-
-
-
     </content>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -651,7 +642,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <div class = "map" id="map" style="height:100%">
+            <div class="map" id="map">
               <script>
                 loadMap("map", <?php
                   require_once("Include/load_map.php");
@@ -660,9 +651,9 @@
               </script>
             </div>
           </div>
+          <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
         </div>
       </div>
-      <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
     </footer>
 
   </body>
