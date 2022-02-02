@@ -220,7 +220,7 @@ if($valid == true){
     var tab = false;
     var userPanel = false;
     
-    <!-- Checks if the edit button has been pressed, and if so opens its dashboard. -->
+    // Checks if the edit button has been pressed, and if so opens its dashboard. 
     function openTab() {
         if (tab == false) {
             document.getElementById('panel').style.display = 'block';
@@ -231,7 +231,7 @@ if($valid == true){
         }
     }
     
-    <!-- Checks if the create user button has been pressed, and if so opens its dashboard. -->
+    // Checks if the create user button has been pressed, and if so opens its dashboard. 
     function openUserPanel() {
         if (userPanel == false) {
             document.getElementById('userpanel').style.display = 'block';
