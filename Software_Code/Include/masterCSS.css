@@ -84,11 +84,23 @@ footer .row{
 
 
 
+.infoPopup {
+  position: relative;
+  bottom: 0;
+  z-index: 10;
+  width: 200%;
 
+}
+.infoContainer {
+ width: 30%;
+ height: 100%;
+ background: white;
+ padding: 5px;
+}
 
-
-
-
+.container2{
+  width:100%;
+}
 
 
 
