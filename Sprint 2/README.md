@@ -1,22 +1,64 @@
-# Sprint 1
+# Sprint 2
 
-All information about your first sprint should be put into this folder. Additionally, the information below should be updated to give a short summary of your daily scrum meetings.
+Summary of all Scrum meetings performed during Sprint 2, Scrum Master is Sameer. All members attended the meeting unless otherwise stated.
+
+### Main talking points to inspire the daily meetings were:
+
+1 – What did I do yesterday that helped the development team meet the sprint goal 
+
+2 – What are you working on today? 
+
+3 – What problems are you facing or may face in trying to achieve #1 
+
 
 ---
 
-## Day [X] - Scrum Meeting summary
-The Scrum Master for this meeting was **Mike Crabb**
+## Day [1] - Scrum Meeting summary
 
-### Members Present:
-Mike, Rachel, information
 
-### Members Not Present:
-Naughty Student 1, Naughty Student 2
+|Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+|#1 |               |               |               |               |               |               |
+|#2 |               |               |               |               |               |               |
+|#3 |               |               |               |               |               |               |
 
-### Apologies:
-Ill Student 1.
+---
 
-### Summary of Conversation:
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+---
+
+## Day [2] - Scrum Meeting summary
+
+
+|Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+|#1 |               |               |               |               |               |               |
+|#2 |               |               |               |               |               |               |
+|#3 |               |               |               |               |               |               |
+
+---
+
+---
+
+## Day [3] - Scrum Meeting summary
+
+
+|Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+|#1 |               |               |               |               |               |               |
+|#2 |               |               |               |               |               |               |
+|#3 |               |               |               |               |               |               |
+
+---
+
+---
+
+## Day [4] - Scrum Meeting summary
+
+
+|Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+|#1 |               |               |               |               |               |               |
+|#2 |               |               |               |               |               |               |
+|#3 |               |               |               |               |               |               |
 
 ---
