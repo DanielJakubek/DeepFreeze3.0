@@ -44,13 +44,13 @@
 
     if($valid_session != true)
     {
-        header("Location: Admin\admin_login.php");
+        header("Location: admin_login.php");
         die();
     }
     else if($valid_session == true)
     {
         $_SESSION["validSession"] = $valid_session;
-        header("Location: Admin\admin_page.php");
+        header("Location: admin_page.php");
         die();
     }
     
