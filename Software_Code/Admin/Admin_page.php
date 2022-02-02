@@ -13,13 +13,13 @@ if (isset($_SESSION['validSession'])) {
   } else //Login set but password was not approved 
   {
     echo "Invalid Session! Please log in";
-    header("Location: Admin\admin_login.php");
+    header("Location: admin_login.php");
     die();
   }
 } else //Neithe login nor passwaord approval set
 {
   echo "Invalid Session! Please log in";
-  header("Location: Admin\admin_login.php");
+  header("Location: admin_login.php");
   die();
 }
 
@@ -103,7 +103,7 @@ if($valid == true){
             <div class="row justify-content-start">
                 <div class="col-4">
                     <div class="card-body" style="width: 300px;">
-                        <img src="Admin\userprofile.png" class="card-img-top" alt="Default profile image"
+                        <img src="userprofile.png" class="card-img-top" alt="Default profile image"
                             style="width: 200px; padding-left: 0%; padding-right: 64px;">
                         <br><br>
                         <h2> Admin Dashboard </h2>
@@ -117,7 +117,7 @@ if($valid == true){
                     <button style='margin: 5%; width: 242px;' class="btn btn-primary" onclick="openTab();">Edit
                         Website</button>
                     <button style='margin: 5%; width: 242px;' class="btn btn-danger"
-                        onclick="location.assign('Admin\admin_login.php');"> Log Out</button>
+                        onclick="location.assign('admin_login.php');"> Log Out</button>
                 </div>
             </div>
         </div>
@@ -128,7 +128,7 @@ if($valid == true){
             <div class="row justify-content-start">
                 <div class="col-4">
                     <div class="card-body" style="width: 300px;">
-                        <form action=" Admin\Admin_page.php" method="post">
+                        <form action=" Admin_page.php" method="post">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">New Username</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
