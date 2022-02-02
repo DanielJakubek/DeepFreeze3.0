@@ -41,7 +41,7 @@ p,u{ font-family: 'Roboto' !important; }
 }
 
 #bgImage{
-  background-image: url('Images/bg2.png');
+  background-image: url('../Images/bg2.png');
 
   /* Makes the image stationary */
   background-attachment: fixed;
