@@ -25,9 +25,10 @@ Summary of all Scrum meetings performed during Sprint 2, Scrum Master is Sameer.
 
 
 |Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
-|#1 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |#2 |               |               |               |               |               |               |
 |#3 |               |               |               |               |               |               |
+|#4 |               |               |               |               |               |               |
 
 ---
 
