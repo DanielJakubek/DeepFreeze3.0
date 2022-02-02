@@ -103,7 +103,7 @@ if($valid == true){
             <div class="row justify-content-start">
                 <div class="col-4">
                     <div class="card-body" style="width: 300px;">
-                        <img src="userprofile.png" class="card-img-top" alt="Default profile image"
+                        <img src="Admin\userprofile.png" class="card-img-top" alt="Default profile image"
                             style="width: 200px; padding-left: 0%; padding-right: 64px;">
                         <br><br>
                         <h2> Admin Dashboard </h2>
