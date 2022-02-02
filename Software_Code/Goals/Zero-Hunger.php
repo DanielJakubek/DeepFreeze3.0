@@ -5,29 +5,16 @@
   <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="masterCSS.css">
+  <link rel="stylesheet" href="../Include/masterCSS.css">
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Index</title>
   <!-- MAP -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+  <script src="../Scripts/maps.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: rgb(240, 240, 240);
-    }
-
-    #map {
-      position: static;
-      width: 100%;
-      height: 50vh;
-    }
-  </style>
 </head>
-
 
 <body>
   <!-- Navigation -->
@@ -58,7 +45,7 @@
         <h1 class="text-center">Zero Hunger</h1>
         </br>
 
-        <img src="images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="No Hunger">
+        <img src="../Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="No Hunger">
         <p>
           Even before the COVID-19 pandemic, the number of people experiencing hunger globally and suffering from food
           insecurity had been rising gradually since 2014. The pandemic has increased the vulnerabilities and
@@ -134,34 +121,15 @@
           Northern Africa, owing to the reduced domestic availability of staple foods and to currency depreciations.
         </p>
         <h3>Map Title</h3>
-        <div id='map'>
-          <script src="scripts/Zero-Hunger-map.js"></script>
+        <div class="map" id="map">
+          <script>
+            loadMap("map", <?php
+              require_once("../Include/load_map.php");
+              load_map(15);
+            ?>);
+          </script>
         </div>
-        <div class="container" id="container2">
-          <div class="col">
-            <script>
-              //Deals with hiding and showing the form
-              function popUpWindow(){
-                var popUp = document.getElementById("infoPage");
-
-                if (popUp.style.display === "none") {
-                  popUp.style.display = "block";
-                } else {
-                  popUp.style.display = "none";
-                }
-              }
-
-            </script>
-
-            <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
-
-            <div class="infoPopup" id="infoPage" style="display: none;" >
-              <form action="/No-Poverty.php" class="infoContainer">
-                <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
-              </form>
-            </div>
-        </div>
-    </div>
+        <sub>Information about the map</sub>
       </div>
     </div>
   </div>
@@ -174,6 +142,5 @@
 
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </html>

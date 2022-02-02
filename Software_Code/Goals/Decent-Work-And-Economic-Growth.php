@@ -5,29 +5,16 @@
   <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="masterCSS.css">
+  <link rel="stylesheet" href="../Include/masterCSS.css">
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Index</title>
   <!-- MAP -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+  <script src="../scripts/maps.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: rgb(240, 240, 240);
-    }
-
-    #map {
-      position: static;
-      width: 100%;
-      height: 50vh;
-    }
-  </style>
 </head>
-
 
 <body>
   <!-- Navigation -->
@@ -57,7 +44,7 @@
       <div class="col clearfix">
         <h1 class="text-center">Decent Work And Economic Growth</h1>
         </br>
-        <img src="images/8.jpg" class="float-md-end mb-3 ms-md-3" alt="Decent Work and Economic Growth">
+        <img src="../images/8.jpg" class="float-md-end mb-3 ms-md-3" alt="Decent Work and Economic Growth">
         <p>
           Before the start of the COVID-19 pandemic in 2020, the average growth of the global economy had already
           slowed. The pandemic has caused the worst global economic recession since the Great Depression and has had a
@@ -146,46 +133,15 @@
             href="https://undocs.org/en/E/2021/58">Progress towards the Sustainable Development Goals – E/2021/58</a>
         </p>
         <h3>Map Title</h3>
-        <div id='map'>
-          <script src="scripts/Decent-Work-And-Economic-Growth-map.js"></script>
+        <div class="map" id="map">
+          <script>
+            loadMap("map", <?php
+              require_once("../Include/load_map.php");
+              load_map(15);
+            ?>);
+          </script>
         </div>
-        <div class="container" id="container2">
-          <div class="col">
-            <p>
-              Dundee Bairns is a charity working to benefit children in Dundee, addressing inequality in basic needs such as food and clothing.
-              <br>
-              <br>
-              Dundee Fighting for Fairness is a charity to voice for people in poverty in Dundee.
-              <br>
-              <br>
-              Positive Steps Partnership is a that charity provides supported accommodation services for vulnerable adults
-              <br>
-              <br>
-              FareShare Dundee provides support to homeless and vulnerable individuals and offers training and volunteering opportunities. One of their projects - Transform Furniture - is a community based project that works towards overcoming poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amount of household goods that end up in landfill.
-            </p>
-            <script>
-              //Deals with hiding and showing the form
-              function popUpWindow(){
-                var popUp = document.getElementById("infoPage");
-
-                if (popUp.style.display === "none") {
-                  popUp.style.display = "block";
-                } else {
-                  popUp.style.display = "none";
-                }
-              }
-
-            </script>
-
-            <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
-
-            <div class="infoPopup" id="infoPage" style="display: none;" >
-              <form action="/No-Poverty.php" class="infoContainer">
-                <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
-              </form>
-            </div>
-        </div>
-    </div>
+        <sub>Information about the map</sub>
       </div>
     </div>
   </div>
