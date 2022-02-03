@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -9,84 +10,126 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Index</title>
+  <title>Peace And Justice</title>
+
   <!-- MAP -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
-  <script src="../Include/map.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../Include/map.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(240, 240, 240);
+    }
+
+    #map {
+      position: static;
+      width: 100%;
+      height: 50vh;
+    }
+    .mapboxgl-ctrl-logo {
+    display: none !important;
+    }
+  </style>
 </head>
 
+
 <body>
-  <!-- Navigation -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="nav">
+  <!-- Navigation bar -->
+  <nav class="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="SDG.png" width="100" height="60" alt="">
+      <a class="navbar-brand" href=".//IndexTwo.php" id="SustainNavImg">
+        <img src="../Images/dundeeSus.png" alt="DundeeSus" class="d-inline-block align-text-top">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Basket</a>
-          </li>
-        </ul>
-
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="buttons">
-          <li class="nav-item">
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-          </li>
-        </ul>
-      </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search. . ." aria-label="Search" id="searchForm">
+        <img src="../Images\noteBook.png" alt="listNoteBook" class="d-inline-block align-text-top" id="noteBookPng">
+      </form>
     </div>
   </nav>
+
+  <!--https://sdgs.un.org/goals/goal1-->
+  <!-- The main text of the page -->
   <div class="container">
     <div class="row">
       <div class="col clearfix">
-        <h1 class="text-center">Peace and Justice</h1>
-        <img src="../Images/16.jpg" class="float-md-end mb-3 ms-md-3" alt="Peace And Justice">
-        <p>
-          The main goal is to promote peaceful and inclusive societies for sustainable development, prove access to
-          justice for all and build effective, accountable and inclusive institutions at all levels
-        </p>
-        <p>
-          The world is still a long way from achieving the goal of building peaceful, just and inclusive societies, with
-          millions of people living in fragile and conflict-affected States. At the end of 2019, 79.5 million people had
-          been forcibly displaced worldwide, equivalent to 1 per cent of the global population.
-        </p>
-        <p>
-          The COVID-19 pandemic has exposed inequalities and discrimination and has tested, weakened, and in some cases
-          shattered rights and protection systems in countries and territories.
-        </p>
-        <p>
-          Globally, around 437,000 people were victims of homicide in 2019. However, lethal violence is slowly
-          decreasing, and homicide rates declined from 6 v ictims per 100,000 population in 2015 to 5.7 per 100,000 in
-          2019.
-        </p>
-        <p>
-          Two thirds of all homicide victims were in sub-Saharan Africa and Latin America and the Caribbean, with no
-          sign of numbers falling in sub-Saharan Africa.
-        </p>
-        <p>
-          The United Nations recorded 69,276 civilian deaths in 12 of the world’s deadliest armed conflicts between 2018
-          and 2020. In 2020, there were five civilians killed per 100,000 population, one in seven of which was a woman
-          or child.
-        </p>
-        <p>
-          Even before the pandemic, violence against children was widespread, affecting victims regardless of wealth or
-          social status. In 77 mostly low- and middle-income countries and territories with available data from 2012 to
-          2020, 8 in 10 children, ranging from 1 to 14 years of age, had been subjected to some form of psychological
-          aggression or physical punishment at home in the previous month.
-        </p>
-        <h3>Map Title</h3>
+        <h1 class="text-center">Zero Hunger</h1>
+      </br>
+        <h2 class="text-center">
+          The our main goal is to end hunger
+        </h2>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="header1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+          <div class="accordion-body">
+            <img src="Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+              <p>
+              <?php 
+                    include "../Include/printPageGoals.php";
+
+                    printData("1","PeaceAndJustice");
+                    
+                  ?>
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="header2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="header2" data-bs-parent="#accordion1">
+          <div class="accordion-body">
+            <img src="Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+            <p>
+            <?php 
+
+                    printData("2","PeaceAndJustice");
+                    
+                  ?>
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="header3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+        </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
+        <div class="accordion-body">
+          <div class="container">
+            <img src="Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+            <p>
+            <?php 
+
+                    printData("3","PeaceAndJustice");
+                    
+                  ?>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="row">
+      <div class="col">
+
         <div class="map" id="map">
           <script>
             loadMap("map", <?php
@@ -95,14 +138,77 @@
             ?>);
           </script>
         </div>
-        <sub>Information about the map</sub>
         <nav id="map-menu"></nav>
       </div>
     </div>
-  </div>
-</body>
 
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container" id="container2">
+      <div class="col">
+        <ul>
+          <br>
+          <li>FareShare dundee</li>
+          <br>
+          <li>Dundee Community Fridge</li>
+          <br>
+          <li>Dundee & Angus Foodbank</li>
+          <li>Dundee Bairns is a charity working to benefit children in Dundee, addressing inequality in basic needs such as food and clothing.</li>
+          <br>
+          <li>Dundee Fighting for Fairness is a charity to voice for people in poverty in Dundee. </li>
+          <br>
+          <li>Positive Steps Partnership is a that charity provides supported accommodation services for vulnerable adults </li>
+          <br>
+          <li>FareShare Dundee provides support to homeless and vulnerable individuals and offers training and volunteering opportunities. One of their projects - Transform Furniture - is a community based project that works towards overcoming poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amount of household goods that end up in landfill.</li>
+        </ul>
+        <script>
+          //Deals with hiding and showing the form
+          function popUpWindow(){
+            var popUp = document.getElementById("infoPage");
 
+            if (popUp.style.display === "none") {
+              popUp.style.display = "block";
+            } else {
+              popUp.style.display = "none";
+            }
+          }
+
+        </script>
+
+        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+        <div class="infoPopup" id="infoPage" style="display: none;" >
+          <form action="/No-Poverty.php" class="infoContainer">
+          <?php 
+
+                    printData("4","PeaceAndJustice");
+                    
+                  ?>          </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <div class="container" id="footerContactUs">
+              <h3>For enquiries</h3>
+              <p>Please contact the Sustainability and Climate Change Team on: </p>
+              <div>
+                <a href="mailto:sustainability@dundeecity.gov.uk"> Email: sustainability@dundeecity.gov.uk </a>
+              </div>
+              <div>
+                <a href="https://twitter.com/sust_dundee"> Twitter: @sust_dundee </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+          </div>
+          <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
