@@ -124,7 +124,7 @@
             ?>);
           </script>
         </div>
-
+        <nav id="map-menu"></nav>
       </div>
     </div>
 
