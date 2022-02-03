@@ -10,7 +10,6 @@ Summary of all Scrum meetings performed during Sprint 2, Scrum Master is Sameer.
 
 3 – What problems are you facing or may face in trying to achieve #1 
 
-
 ---
 
 ## Day [1] - Scrum Meeting summary
@@ -31,9 +30,13 @@ Summary of all Scrum meetings performed during Sprint 2, Scrum Master is Sameer.
 
 |Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-|#1 |  Peer programming with adrian, try to get user adding done- 16,17              | Peer programming with Sameer, try to get user adding done- 16,17               |               |               |               |               |
+|#1 |  Peer programming with adrian, try to get user adding done- 16,17              | Peer programming with Sameer, try to get user adding done- 16,17               |  Work on 47             |    Peer programming 5 and 6           |  try 46, get all pages done             |  map locations             |
 |#2 |               |               |               |               |               |               |
 |#3 |               |               |               |               |               |               |
+
+### Main Issue Points 
+Need to sort through software code
+We should all be adding our own DOD (Definition of Done)
 
 ---
 
