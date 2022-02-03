@@ -1,8 +1,12 @@
 <?php
-    function loadMap() {
+    function loadMap($locationId) {
           include "dbconnect.php";
 
-        $sql = "SELECT * FROM maplocation ORDER BY locationName ASC";
+        if($locationId === "all") {
+            $sql = "SELECT * FROM maplocation ORDER BY locationName ASC";
+        } else {
+            $sql = "SELECT * FROM maplocation WHERE locationID=$locationId ORDER BY locationName ASC";
+        }
         $result = $db->query($sql);
         
         echo "[";

@@ -1,4 +1,5 @@
 function loadMap(map, layers) {
+    console.log(layers);
     mapboxgl.accessToken = "pk.eyJ1IjoiZ3JlZ29yZG9vbSIsImEiOiJja3l1NjF4Z2wwM2MwMm50NHVqeG52c2Y0In0.KNoSFWWsfL7xrj2kAnwjpQ";
     var map = new mapboxgl.Map({
         container: map,
@@ -8,7 +9,6 @@ function loadMap(map, layers) {
     });
     map.addControl(new mapboxgl.NavigationControl());
 
-    const layerIds = layers.map(layer => layer.name);
     map.on("load", function () {
         for (const layer of layers) {
             map.addSource(layer.name, {

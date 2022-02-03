@@ -14,7 +14,7 @@
 
     <!-- MAP -->
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
-    <script src="Include/indexMap.js"></script>
+    <script src="Include/map.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
 
     <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -645,8 +645,8 @@
             <div class="map" id="map">
               <script>
                 loadMap("map", <?php
-                  require_once("Include/indexMap.php");
-                  loadMap();
+                  require_once("Include/map.php");
+                  loadMap("all");
                 ?>)
               </script>
             </div>
