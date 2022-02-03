@@ -37,7 +37,7 @@ For a more detailed view of the daily meetings, there's a video availible at {li
 |#3 |               |               |   Need to decide Javascript vs PHP for task            |               |   No Issues            |  Possible issues with javascript             |
 
 ### Main Issue Points 
-Need to sort through software code
+Need to sort through software code,
 We should all be adding our own DOD (Definition of Done)
 
 ---
