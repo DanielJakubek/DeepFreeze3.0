@@ -9,104 +9,113 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Index</title>
+  <title>Clean Energy</title>
+
   <!-- MAP -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
-  <script src="../Include/map.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../Include/map.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(240, 240, 240);
+    }
+
+    #map {
+      position: static;
+      width: 100%;
+      height: 50vh;
+    }
+    .mapboxgl-ctrl-logo {
+    display: none !important;
+    }
+  </style>
 </head>
 
+
 <body>
-  <!-- Navigation -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="nav">
+  <!-- Navigation bar -->
+  <nav class="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="SDG.png" width="100" height="60" alt="">
+      <a class="navbar-brand" href=".//IndexTwo.php" id="SustainNavImg">
+        <img src="../Images/dundeeSus.png" alt="DundeeSus" class="d-inline-block align-text-top">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Basket</a>
-          </li>
-        </ul>
-
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="buttons">
-          <li class="nav-item">
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-          </li>
-        </ul>
-      </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search. . ." aria-label="Search" id="searchForm">
+        <img src="../Images\noteBook.png" alt="listNoteBook" class="d-inline-block align-text-top" id="noteBookPng">
+      </form>
     </div>
   </nav>
+
+  <!--https://sdgs.un.org/goals/goal1-->
+  <!-- The main text of the page -->
   <div class="container">
     <div class="row">
       <div class="col clearfix">
-        <h1 class="text-center">Clean Energy</h1>
-        <img src="../Images/7.jpg" class="float-md-end mb-3 ms-md-3" alt="Clean Energy">
-        <p>
-          The main goal of this development goal is to ensure access to affordable, reliable, sustainable and mordern
-          energy for all.
-        </p>
-        <p>
-          Despite significant progress over the past decade on improving access to electricity, increasing renewable
-          energy use in the electricity sector and improving energy efficiency, the world is still falling short in
-          providing affordable, reliable, sustainable and modern energy for all. Clean and sustainable energy should be
-          at the heart of the COVID-19 response and of efforts to combat climate change.
-        </p>
-        <p>
-          Global access to electricity increased from 83 per cent in 2010 to 90 per cent in 2019, with an increase in
-          average annual electrification of 0.876 percentage points. The global access deficit decreased from 1.22
-          billion in 2010 to 759 million in 2019. Despite the significant effort made, there may still be as many as 660
-          million people without access worldwide in 2030. In addition, the COVID-19 pandemic will impede progress on
-          future electrification.
-        </p>
-        <p>
-          In 2019, 66 per cent of the global population had access to clean cooking fuels and technologies. For the
-          period 2010–2019, most of the increases in such access occurred in the most populous low- and middle-income
-          countries and territories: Brazil, China, India, Indonesia and Pakistan. People reliant on polluting fuels and
-          technologies are exposed to high levels of household air pollution with serious consequences for their
-          cardiovascular and respiratory systems, increasing their vulnerability to diseases including the COVID-19
-          virus.
-        </p>
-        <p>
-          The share of renewable energy in total final energy consumption increased gradually from 16.4 per cent in 2010
-          to 17.1 per cent in 2018. However, the share of modern renewable sources in total final energy consumption
-          rose by only 2.5 percentage points in a decade, remaining below 11 per cent in 2018. The pandemic is having a
-          mixed impact on renewable energy development across end-use sectors: global electricity demand declined by 2
-          per cent in 2020 compared to 2019, but the use of renewables for power generation increased by almost 7 per
-          cent year on year.
-        </p>
-        <p>
-          Global primary energy intensity increased from 5.6 megajoules per dollar of gross domestic product (GDP) in
-          2010 to 4.8 megajoules in 2018, an average annual rate of improvement of 2 per cent. While early estimates for
-          2019 also indicate an improvement of 2 per cent, the outlook for 2020 suggests a rate of only 0.8 per cent
-          because of the pandemic. Annual improvement until 2030 will need to average 3 per cent if the Goal 7.3 target
-          is to be met.
-        </p>
-        <p>
-          International financial flows to developing countries in support of clean and renewable energy reached $14
-          billion in 2018, 35 per cent lower than in 2017 but 32 per cent higher than in 2010. Hydropower projects
-          received 27 per cent of flows in 2018, while projects relating to solar received 26 per cent, geothermal 8 per
-          cent, wind 5 per cent and multiple or other renewable energies 34 per cent.
-        </p>
-        <p>
-          Developing countries had a renewable energy capacity of 219 watts per capita at the end of 2019, an increase
-          of 7 per cent over the year but slightly less than the 8.8 per cent expansion in per capita capacity for 2018.
-          Per capita hydropower capacity remained stable in 2019, as total capacity increased in line with population
-          growth during the year at approximately 0.4 per cent. Solar and wind capacities both expanded much faster than
-          population growth, leading to increases in per capita capacity of 22.2 and 11.3 per cent, respectively.
-        </p>
-        <h3>Map Title</h3>
+        <h1 class="text-center">Clean Energy </h1>
+      </br>
+        <h2 class="text-center">
+          The our main goal is to supply clean Energy
+        </h2>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="header1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+          <div class="accordion-body">
+            <img src="../Images/7.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+              <p>
+                text here
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="header2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="header2" data-bs-parent="#accordion1">
+          <div class="accordion-body">
+            <img src="../Images/7.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+            <p>
+              text here
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="header3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+        </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
+        <div class="accordion-body">
+          <div class="container">
+            <img src="../Images/7.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+            <p>
+              text here
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="row">
+      <div class="col">
+
         <div class="map" id="map">
           <script>
             loadMap("map", <?php
@@ -115,14 +124,76 @@
             ?>);
           </script>
         </div>
-        <sub>Information about the map</sub>
-        <nav id="map-menu"></nav>
+
       </div>
     </div>
-  </div>
-</body>
 
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <div class="container" id="container2">
+      <div class="col">
+        <ul>
+          <br>
+          <li>FareShare dundee</li>
+          <br>
+          <li>Dundee Community Fridge</li>
+          <br>
+          <li>Dundee & Angus Foodbank</li>
+          <li>Dundee Bairns is a charity working to benefit children in Dundee, addressing inequality in basic needs such as food and clothing.</li>
+          <br>
+          <li>Dundee Fighting for Fairness is a charity to voice for people in poverty in Dundee. </li>
+          <br>
+          <li>Positive Steps Partnership is a that charity provides supported accommodation services for vulnerable adults </li>
+          <br>
+          <li>FareShare Dundee provides support to homeless and vulnerable individuals and offers training and volunteering opportunities. One of their projects - Transform Furniture - is a community based project that works towards overcoming poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amount of household goods that end up in landfill.</li>
+        </ul>
+        <script>
+          //Deals with hiding and showing the form
+          function popUpWindow(){
+            var popUp = document.getElementById("infoPage");
+
+            if (popUp.style.display === "none") {
+              popUp.style.display = "block";
+            } else {
+              popUp.style.display = "none";
+            }
+          }
+
+        </script>
+
+        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+        <div class="infoPopup" id="infoPage" style="display: none;" >
+          <form action="/No-Poverty.php" class="infoContainer">
+            <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
+          </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <div class="container" id="footerContactUs">
+            <h3>For enquiries</h3>
+            <p>Please contact the Sustainability and Climate Change Team on: </p>
+            <div>
+              <a href="mailto:sustainability@dundeecity.gov.uk"> Email: sustainability@dundeecity.gov.uk </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/sust_dundee"> Twitter: @sust_dundee </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+        </div>
+        <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
+      </div>
+    </div>
+  </footer>
+
+  </body>
 </html>
