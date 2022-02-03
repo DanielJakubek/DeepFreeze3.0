@@ -73,7 +73,11 @@
           <div class="accordion-body">
             <img src="../Images/7.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
               <p>
-                text here
+              <?php 
+                    include "../Include/printPageGoals.php";
+                    printData("1","Energy");
+                    
+                  ?>
               </p>
           </div>
         </div>
@@ -88,7 +92,11 @@
           <div class="accordion-body">
             <img src="../Images/7.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
             <p>
-              text here
+            <?php 
+                    
+                    printData("2","Energy");
+                    
+                  ?>
             </p>
           </div>
         </div>
@@ -104,7 +112,11 @@
           <div class="container">
             <img src="../Images/7.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
             <p>
-              text here
+            <?php 
+                    
+                    printData("3","Energy");
+                    
+                  ?>
             </p>
           </div>
         </div>
@@ -163,8 +175,10 @@
         <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
         <div class="infoPopup" id="infoPage" style="display: none;" >
           <form action="/No-Poverty.php" class="infoContainer">
-            <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
-          </form>
+          <?php 
+                    printData("4","Energy");
+                    
+                  ?>          </form>
         </div>
     </div>
 </div>
