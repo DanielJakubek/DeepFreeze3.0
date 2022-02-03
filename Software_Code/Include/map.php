@@ -19,7 +19,7 @@
             echo <<<EOT
                 {
                     "name": "$locationName",
-                    "description": "$description",
+                    "description": `$description`,
                     "geometry": {
                         "type": "Point",
                         "coordinates": [$latitude, $longitude]
