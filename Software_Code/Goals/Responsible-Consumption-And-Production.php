@@ -12,7 +12,7 @@
   <title>Index</title>
   <!-- MAP -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
-  <script src="../Sripts/maps.js"></script>
+  <script src="../Include/map.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
@@ -103,12 +103,13 @@
         <div class="map" id="map">
           <script>
             loadMap("map", <?php
-              require_once("../Include/load_map.php");
-              load_map(12);
+              require_once("../Include/map.php");
+              loadMap(12);
             ?>);
           </script>
         </div>
         <sub>Information about the map</sub>
+        <nav id="map-menu"></nav>
       </div>
     </div>
   </div>

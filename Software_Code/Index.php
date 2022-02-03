@@ -14,7 +14,7 @@
 
     <!-- MAP -->
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
-    <script src="scripts/maps.js"></script>
+    <script src="Include/map.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
 
     <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -645,11 +645,12 @@
             <div class="map" id="map">
               <script>
                 loadMap("map", <?php
-                  require_once("Include/load_map.php");
-                  load_map("all");
+                  require_once("Include/map.php");
+                  loadMap("all");
                 ?>)
               </script>
             </div>
+            <nav id="map-menu"></nav>
           </div>
           <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
         </div>
@@ -660,5 +661,5 @@
 
   <!-- JavaScript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="Include/indexJS.js"></script>
+  <script src="Include/index.js"></script>
 </html>
