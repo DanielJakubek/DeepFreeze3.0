@@ -5,7 +5,8 @@ function loadMap(map, layers) {
         container: map,
         style: "mapbox://styles/mapbox/streets-v11",
         center: [-2.982, 56.467],
-        zoom: 12
+        zoom: 12,
+        attributionControl: false
     });
     map.addControl(new mapboxgl.NavigationControl());
 
