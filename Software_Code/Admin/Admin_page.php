@@ -80,6 +80,70 @@ if($valid == true){
     createNewUser($newUsername, $newPassword);
 }
 
+//=========================== Edit Page Logic ===================================
+
+$page = "Page to edit";
+$element = "Element to edit";
+$text = "";
+
+if(isset($_POST["selection1"]))
+{
+    $_SESSION["page"] = $_POST["selection1"];
+    $page = $_SESSION["page"];
+}
+else {
+
+    $page = $_SESSION["page"];
+    
+}
+
+if(isset($_POST["selection2"]))
+{
+    $_SESSION["element"] = $_POST["selection2"];
+    $element = $_SESSION["element"];
+}
+else {
+
+    $element = $_SESSION["element"];
+
+}
+
+if(isset($_POST["text"]))
+{
+    $text = $_POST["text"];
+    setTexto($page, $element, $text);
+}
+
+function getTexto($page, $element)
+{
+    include("..\Include\dbconnect.php");
+
+    //Updates the table
+    $query = "SELECT `Text` FROM `pagetextsegments` WHERE `PageName`='$page' AND `SegmentID`='$element'; ";
+    
+    $rows = array();
+    $result = $db->query($query);
+    while ($row = $result->fetch_assoc()) {
+        $returnText = $row['Text'];
+    }
+    
+    $db->close();
+    return $returnText;
+    
+}
+
+function setTexto($page, $element, $text)
+{
+    include("..\Include\dbconnect.php");
+
+    //Updates the table
+    $query = "UPDATE `pagetextsegments` SET `PageName`='$page',`SegmentID`='$element',`Text`='$text' WHERE `PageName`='$page' AND `SegmentID`='$element';" ;
+    $stmt = $db->prepare($query);
+    $stmt->execute(); 
+
+    $db->close();
+}
+
 ?>
 <html>
 
@@ -129,18 +193,19 @@ if($valid == true){
                 <div class="col-4">
                     <div class="card-body" style="width: 300px;">
                         <form action=" Admin_page.php" method="post">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">New Username</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                name="newUsername">
-                            <div id="emailHelp" class="form-text"> Please only input A-Z without any numbers
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">New Username</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" name="newUsername">
+                                <div id="emailHelp" class="form-text"> Please only input A-Z without any numbers
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">New Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" name="newPassword">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">New Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    name="newPassword">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -154,58 +219,106 @@ if($valid == true){
                 <div class="col-4" id='panel'>
                     <div class="card-body" id='panel'>
 
+
                         <div class="container">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown button
+                                    <?php  
+                                    echo $page;
+                                    ?>
                                 </button>
                                 <ul class="dropdown-menu overflow-auto" aria-labelledby="dropdownMenuButton1"
-                                    style="height: 500px; width: 200px;">
-                                    <li><a class="dropdown-item" href="#">Poverty</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    style="height: 500px; width: 400px;" name="page">
+                                    <form action="Admin_page.php" method="post">
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Energy">Clean Energy</button>
+                                        </li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Clean-Water-And-Sanitation">Clean Water and Sanitation</button>
+                                        </li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Climate">Climate Action</button></li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Decent-Work-And-Economic-Growth">Decent Work and Economic
+                                                Growth</button></li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="GenderEquality">Gender Equality</button></li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="GH-WB">Good Health and Well Being</button>
+                                        </li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Industry">Industry Innovation and
+                                                Infastructure</button>
+                                        </li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="LifeBelowWater">Life Below Water</button></li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="LifeOnLand">Life On Land</button></li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="No-Poverty">No Poverty</button></li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Partnerships">Partnerships For The Goals</button>
+                                        </li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="PeaceAndJustice">Peace And Justice</button></li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Quality-Education">Quality Education</button></li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Reduced-Inequalities">Reduced Inequalities</button></li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Responsible-Consumption-And-Production">Responsible Consumption
+                                                And Production</button>
+                                        </li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Cities-Comm">Sustainable Cities And
+                                                Communities</button>
+                                        </li>
+                                        <li><button class="dropdown-item" name="selection1" type="submit"
+                                                value="Zero-Hunger">Zero Hunger</button></li>
+                                    </form>
                                 </ul>
                             </div>
                         </div>
+
 
                         <div class="container" style="margin-top: 25px;">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown button
+                                    <?php  
+                                    echo $element;
+                                    ?>
                                 </button>
                                 <ul class="dropdown-menu overflow-auto" aria-labelledby="dropdownMenuButton1"
-                                    style="height: 500px; width: 200px;">
-                                    <li><a class="dropdown-item" href="#">Poverty</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    style="height: 150px; width: 200px;" name="element">
+                                    <form action="Admin_page.php" method="post">
+                                        <li><button class="dropdown-item" name="selection2" type="submit" value="1">Item
+                                                #1</button></li>
+                                        <li><button class="dropdown-item" name="selection2" type="submit" value="2">Item
+                                                #2</button></li>
+                                        <li><button class="dropdown-item" name="selection2" type="submit" value="3">Item
+                                                #3</button></li>
+                                    </form>
                                 </ul>
                             </div>
                         </div>
+
+                      
 
                     </div>
                 </div>
                 <div class="col-7" id='panel'>
                     <div class="card-body" id='panel' style="margin-left: 60px">
+                    <form action="Admin_page.php" method="post">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                            style='width: 100%;'></textarea>
+                            style='width: 100%;' name='text'> <?php echo getTexto($page, $element); ?> </textarea>
+                            <button type="submit" class="btn btn-primary" name="check">Submit</button>
+                    </form>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -217,6 +330,17 @@ if($valid == true){
     document.getElementById('userpanel').style.display = 'none';
     var tab = false;
     var userPanel = false;
+
+    var panelMemory = <?php echo json_encode($_POST['selection1'] ?? null) ?>;
+    var panelMemory2 = <?php echo json_encode($_POST['selection2'] ?? null) ?>;
+
+    if (panelMemory != null) {
+        openTab();
+    }
+
+    if (panelMemory2 != null) {
+        openTab();
+    }
 
     function openTab() {
         if (tab == false) {
