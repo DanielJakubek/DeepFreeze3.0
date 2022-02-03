@@ -9,71 +9,113 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Index</title>
+  <title>Partnerships for the Goals</title>
+
   <!-- MAP -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
-  <script src="../Include/map.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../Include/map.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(240, 240, 240);
+    }
+
+    #map {
+      position: static;
+      width: 100%;
+      height: 50vh;
+    }
+    .mapboxgl-ctrl-logo {
+    display: none !important;
+    }
+  </style>
 </head>
 
+
 <body>
-  <!-- Navigation -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="nav">
+  <!-- Navigation bar -->
+  <nav class="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="SDG.png" width="100" height="60" alt="">
+      <a class="navbar-brand" href=".//IndexTwo.php" id="SustainNavImg">
+        <img src="../Images/dundeeSus.png" alt="DundeeSus" class="d-inline-block align-text-top">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Basket</a>
-          </li>
-        </ul>
-
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="buttons">
-          <li class="nav-item">
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-          </li>
-        </ul>
-      </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search. . ." aria-label="Search" id="searchForm">
+        <img src="../Images\noteBook.png" alt="listNoteBook" class="d-inline-block align-text-top" id="noteBookPng">
+      </form>
     </div>
   </nav>
+
+  <!--https://sdgs.un.org/goals/goal1-->
+  <!-- The main text of the page -->
   <div class="container">
     <div class="row">
       <div class="col clearfix">
-        <h1 class="text-center">Partnerships for the Goals</h1>
-        <img src="../Images/17.jpg" class="float-md-end mb-3 ms-md-3" alt="Partnerships For The Goals">
-        <p>
-          The SDGs can only be realized with strong global partnerships and cooperation.
-        </p>
-        <p>
-          A successful development agenda requires inclusive partnerships — at the global, regional, national and local
-          levels — built upon principles and values, and upon a shared vision and shared goals placing people and the
-          planet at the centre.
-        </p>
-        <p>
-          Many countries require Official Development Assistance to encourage growth and trade. Yet, aid levels are
-          falling and donor countries have not lived up to their pledge to ramp up development finance.
-        </p>
-        <p>
-          Due to the COVID-19 pandemic, the global economy is projected to contract sharply, by 3 per cent, in 2020,
-          experiencing its worst recession since the Great Depression.
-        </p>
-        <p>
-          Strong international cooperation is needed now more than ever to ensure that countries have the means to
-          recover from the pandemic, build back better and achieve the Sustainable Development Goals.
-        </p>
-        <h3>Map Title</h3>
+        <h1 class="text-center">Zero Hunger</h1>
+      </br>
+        <h2 class="text-center">
+          The our main goal is to end hunger
+        </h2>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="header1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+          <div class="accordion-body">
+            <img src="Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+              <p>
+                text here
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="header2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="header2" data-bs-parent="#accordion1">
+          <div class="accordion-body">
+            <img src="Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+            <p>
+              text here
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="header3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+        </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
+        <div class="accordion-body">
+          <div class="container">
+            <img src="Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+            <p>
+              text here
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="row">
+      <div class="col">
+
         <div class="map" id="map">
           <script>
             loadMap("map", <?php
@@ -82,14 +124,74 @@
             ?>);
           </script>
         </div>
-        <sub>Information about the map</sub>
         <nav id="map-menu"></nav>
       </div>
     </div>
-  </div>
-</body>
 
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container" id="container2">
+      <div class="col">
+        <ul>
+          <br>
+          <li>FareShare dundee</li>
+          <br>
+          <li>Dundee Community Fridge</li>
+          <br>
+          <li>Dundee & Angus Foodbank</li>
+          <li>Dundee Bairns is a charity working to benefit children in Dundee, addressing inequality in basic needs such as food and clothing.</li>
+          <br>
+          <li>Dundee Fighting for Fairness is a charity to voice for people in poverty in Dundee. </li>
+          <br>
+          <li>Positive Steps Partnership is a that charity provides supported accommodation services for vulnerable adults </li>
+          <br>
+          <li>FareShare Dundee provides support to homeless and vulnerable individuals and offers training and volunteering opportunities. One of their projects - Transform Furniture - is a community based project that works towards overcoming poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amount of household goods that end up in landfill.</li>
+        </ul>
+        <script>
+          //Deals with hiding and showing the form
+          function popUpWindow(){
+            var popUp = document.getElementById("infoPage");
 
+            if (popUp.style.display === "none") {
+              popUp.style.display = "block";
+            } else {
+              popUp.style.display = "none";
+            }
+          }
+
+        </script>
+
+        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+        <div class="infoPopup" id="infoPage" style="display: none;" >
+          <form action="/No-Poverty.php" class="infoContainer">
+            <label for="info">In 2019, 12,000 disag poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amou</label>
+          </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <div class="container" id="footerContactUs">
+              <h3>For enquiries</h3>
+              <p>Please contact the Sustainability and Climate Change Team on: </p>
+              <div>
+                <a href="mailto:sustainability@dundeecity.gov.uk"> Email: sustainability@dundeecity.gov.uk </a>
+              </div>
+              <div>
+                <a href="https://twitter.com/sust_dundee"> Twitter: @sust_dundee </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+          </div>
+          <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

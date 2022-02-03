@@ -9,7 +9,7 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Zero-Hunger</title>
+  <title>Zero Hunger</title>
 
   <!-- MAP -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
@@ -124,10 +124,9 @@
             ?>);
           </script>
         </div>
-
+        <nav id="map-menu"></nav>
       </div>
     </div>
-
 
     <div class="container" id="container2">
       <div class="col">
@@ -171,29 +170,28 @@
 </div>
 </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <div class="container" id="footerContactUs">
-            <h3>For enquiries</h3>
-            <p>Please contact the Sustainability and Climate Change Team on: </p>
-            <div>
-              <a href="mailto:sustainability@dundeecity.gov.uk"> Email: sustainability@dundeecity.gov.uk </a>
-            </div>
-            <div>
-              <a href="https://twitter.com/sust_dundee"> Twitter: @sust_dundee </a>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <div class="container" id="footerContactUs">
+              <h3>For enquiries</h3>
+              <p>Please contact the Sustainability and Climate Change Team on: </p>
+              <div>
+                <a href="mailto:sustainability@dundeecity.gov.uk"> Email: sustainability@dundeecity.gov.uk </a>
+              </div>
+              <div>
+                <a href="https://twitter.com/sust_dundee"> Twitter: @sust_dundee </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
 
+          </div>
+          <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
         </div>
-        <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
       </div>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
