@@ -10,6 +10,8 @@ Summary of all Scrum meetings performed during Sprint 2, Scrum Master is Sameer.
 
 3 – What problems are you facing or may face in trying to achieve #1 
 
+For a more detailed view of the daily meetings, there's a video availible at {link here}
+
 ---
 
 ## Day [1] - Scrum Meeting summary
