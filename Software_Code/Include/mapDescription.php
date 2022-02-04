@@ -16,7 +16,7 @@
 
         //While there are items in the query print them in the correct format
         echo ("
-          <a type='button'><li id='$itemID' onclick='checkArrayExists(this.id);'> " . $itemID . ": ". $row['description'] ."</li></a><br></br>");
+          <a><li><button type='button' class='btn btn-primary'>Hide</button> " . $itemID . ": ". $row['description'] ."  <button type='button' id='$itemID' onclick='checkArrayExists(this.id);' >+</button>                   </li></a><br></br>");
       }
 
       $db->close();
