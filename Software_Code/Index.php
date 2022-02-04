@@ -652,17 +652,17 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-
-            <div class="map" id="map">
-              <script>
-                loadMap("map", <?php
-                  require_once("Include/map.php");
-                  loadMap("all");
-                ?>)
-              </script>
-            </div>
-            <nav id="map-menu"></nav>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-start">
+              <div class="map" id="map">
+                <script>
+                  loadMap("map", <?php
+                    require_once("Include/map.php");
+                    loadMap("all");
+                  ?>);
+                </script>
+              </div>
+              <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+              <div id="map-menu" style="display: none;"></div>
           </div>
           <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
         </div>

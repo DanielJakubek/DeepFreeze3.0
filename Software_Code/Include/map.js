@@ -54,10 +54,10 @@ function createMapControl(map, layer) {
         })
     }
 
-    const button = document.createElement("button");
-    button.className = "map-show-hide-shown";
-    button.textContent = "Hide";
-    button.onclick = function (e) {
+    const hideButton = document.createElement("button");
+    hideButton.className = "btn btn-secondary";
+    hideButton.textContent = "Hide";
+    hideButton.onclick = function (e) {
         e.preventDefault();
         e.stopPropagation();
 
@@ -67,23 +67,44 @@ function createMapControl(map, layer) {
         );
         if (visibility === "visible") {
             map.setLayoutProperty(layer.name, "visibility", "none");
-            this.className = "map-show-hide-hidden";
+            this.className = "btn btn-primary";
             this.textContent = "Show";
         } else {
             map.setLayoutProperty(layer.name, "visibility", "visible");
-            this.className = "map-show-hide-shown";
+            this.className = "btn btn-secondary";
             this.textContent = "Hide";
         }
     }
+
+    const addToListButton = document.createElement("button");
+    addToListButton.className = "btn btn-primary btn-sm";
+    addToListButton.textContent = "+";
+    addToListButton.onclick = function (e) {
+        checkArrayExists(layer.name);
+    };
 
     const bold = document.createElement("b");
     bold.appendChild(link);
     bold.appendChild(document.createTextNode(": "))
 
-    const row = document.createElement("div");
-    row.appendChild(button);
+    const row = document.createElement("li");
+    row.className = "map-list-entry";
+    row.appendChild(hideButton);
+    row.appendChild(document.createTextNode(" "));
+    row.appendChild(addToListButton);
+    row.appendChild(document.createTextNode("  "));
     row.appendChild(bold);
     row.appendChild(document.createTextNode(layer.description));
 
     return row;
+}
+
+function popUpWindow() {
+    var popUp = document.getElementById("map-menu");
+
+    if (popUp.style.display === "none") {
+        popUp.style.display = "block";
+    } else {
+        popUp.style.display = "none";
+    }
 }
