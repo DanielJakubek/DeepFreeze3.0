@@ -18,12 +18,12 @@ For a more detailed view of the daily meetings, there's a video availible at {li
 
 
 |Question | 1  | 2      | 3       |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Sameer |               |               |               |               |               |               |
-|Adrian |               |               |               |               |               |               |
-|Daniel |               |               |               |               |               |               |
-|Scott |               |               |               |               |               |               |
-|Alessandro |               |               |               |               |               |               |
+| ------------- | ------------- | ------------- | 
+|Sameer |               |               |               |               
+|Adrian |               |               |               |               
+|Daniel |               |               |               |               
+|Scott |               |               |               |               
+|Alessandro |               |               |               |              
 
 ---
 
