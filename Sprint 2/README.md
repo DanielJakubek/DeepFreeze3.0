@@ -17,11 +17,13 @@ For a more detailed view of the daily meetings, there's a video availible at {li
 ## Day [1] - Scrum Meeting summary
 
 
-|Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
+|Question | 1  | 2      | 3       |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-|#1 |               |               |               |               |               |               |
-|#2 |               |               |               |               |               |               |
-|#3 |               |               |               |               |               |               |
+|Sameer |               |               |               |               |               |               |
+|Adrian |               |               |               |               |               |               |
+|Daniel |               |               |               |               |               |               |
+|Scott |               |               |               |               |               |               |
+|Alessandro |               |               |               |               |               |               |
 
 ---
 
@@ -31,9 +33,9 @@ For a more detailed view of the daily meetings, there's a video availible at {li
 
 |Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-|#1 |               |               |               |               |               |               |
-|#2 |               |               |               |               |               |               |
-|#3 |               |               |               |               |               |               |
+|#1 |               |               | Worked on 47, helped gregor and alessandro with javascript              |               |               |               |
+|#2 |               |               | Host front page on azure, work with ali on map #43, #44, #46. Focus on #7 allow user to make list            |               |               |               |
+|#3 |               |               | Need to decide on what tools to use for #7              |               |               |               |
 
 ---
 
