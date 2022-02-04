@@ -17,27 +17,38 @@
     <script src="Include/map.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
 
+    <!-- JavaScript -->
+    <script src="Include/goalList.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Index</title>
+    <title>Sustainable Dundee</title>
   </head>
 
   <body id="bgImage">
-    <!-- Navigation bar -->
-    <nav class="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Index.php" id="SustainNavImg">
-          <img src="Images\dundeeSus.png" alt="UnLogoSustain" class="d-inline-block align-text-top">
-        </a>
-        <form class="d-flex justify-content-center">
-          <input class="form-control me-2" type="search" placeholder="Search. . ." aria-label="Search" id="searchForm">
-          <a type="button" data-bs-toggle="modal" data-bs-target="#listModal">
-            <img src="Images\noteBook.png" alt="listNoteBook" class="d-inline-block align-text-top" id="noteBookPng">
+    <script src="Include/goalList.js"></script>
+    <header>
+      <!-- Navigation bar -->
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.php" id="SustainNavImg">
+            <img src="Images\dundeeSus.png" alt="UnLogoSustain" class="d-inline-block align-text-top">
           </a>
-        </form>
-      </div>
-    </nav>
+
+          <form class="d-flex justify-content-center">
+          
+            <a type="button" data-bs-toggle="modal" id="listButton" data-bs-target="#goalListModal">
+              <img src="Images\noteBook.png" alt="listNoteBook" class="d-inline-block align-text-top" id="noteBookPng">
+            </a>
+          </form>
+
+        </div>
+      </nav>
+    </header>
     <!-- Main Content/body -->
     <content>
+      <?php include "Include/listModal.php"; //Modal for the list, increases readabiliy of this page?>
+
       <div class="bg-image">
         <div class="container-flex" id="siteTitle">
           <h1> Sustainable Dundee </h1>
@@ -642,6 +653,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
             <div class="map" id="map">
               <script>
                 loadMap("map", <?php
