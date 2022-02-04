@@ -82,40 +82,63 @@ if($valid == true){
 
 //=========================== Edit Page Logic ===================================
 
-$page = "Page to edit";
+$page = "Page to edit"; 
 $element = "Element to edit";
-$text = "";
+$text = ""; // text from database
 
+//Check if anything was input into page dropdown
 if(isset($_POST["selection1"]))
 {
+    //Save in session
     $_SESSION["page"] = $_POST["selection1"];
     $page = $_SESSION["page"];
 }
 else {
 
-    $page = $_SESSION["page"];
+    //restore input to display it later
+    if(isset($_SESSION["page"]))
+    {
+        $page = $_SESSION["page"];
+    }
     
 }
 
+//Check if anything was input into section/element dropdown
 if(isset($_POST["selection2"]))
 {
+    //Save in session
     $_SESSION["element"] = $_POST["selection2"];
     $element = $_SESSION["element"];
 }
 else {
 
-    $element = $_SESSION["element"];
+    //restore input to display it later
+    if(isset($_SESSION["element"]))
+    {
+        $element = $_SESSION["element"];
+    }
 
 }
 
+//Check if text has been changed
 if(isset($_POST["text"]))
 {
     $text = $_POST["text"];
-    setTexto($page, $element, $text);
+    setTexto($page, $element, $text); //save to database
 }
 
+//Get text from database
 function getTexto($page, $element)
 {
+    
+    if(!isset($_SESSION["element"]))
+    {
+        if(!isset($_SESSION["text"]))
+        {
+            return "Please select which page and section in that page you wish to edit";
+        }
+    }
+    
     include("..\Include\dbconnect.php");
 
     //Updates the table
@@ -132,6 +155,7 @@ function getTexto($page, $element)
     
 }
 
+//Write text changes to database
 function setTexto($page, $element, $text)
 {
     include("..\Include\dbconnect.php");
@@ -326,22 +350,29 @@ function setTexto($page, $element, $text)
     </div>
 
     <script>
+
+    //Show edit button panel
     document.getElementById('panel').style.display = 'none';
+    //Show add user button panel
     document.getElementById('userpanel').style.display = 'none';
+
+    //Boolean checks if panel is open or closed
     var tab = false;
     var userPanel = false;
 
+    //Import previous state of bool checks
     var panelMemory = <?php echo json_encode($_POST['selection1'] ?? null) ?>;
     var panelMemory2 = <?php echo json_encode($_POST['selection2'] ?? null) ?>;
 
+    //Check bool and open if clicked before hand as dictated by memory variables^
     if (panelMemory != null) {
         openTab();
     }
-
     if (panelMemory2 != null) {
         openTab();
     }
 
+    //Open and close panels
     function openTab() {
         if (tab == false) {
             document.getElementById('panel').style.display = 'block';
@@ -352,6 +383,7 @@ function setTexto($page, $element, $text)
         }
     }
 
+    //Open and close panels
     function openUserPanel() {
         if (userPanel == false) {
             document.getElementById('userpanel').style.display = 'block';
