@@ -61,11 +61,13 @@ For a more detailed view of the daily meetings, there's a video availible at {li
 
 ## Day [4] - Scrum Meeting summary
 
-| Question   | 1 | 2 | 3 |
-|------------|---|---|---|
-| Sameer     |   |   |   |
-| Adrian     |   |   |   |
-| Daniel     |   |   |   |
-| Scott      |   |   |   |
-| Alessandro |   |   |   |
+| Question   | 1                                                        | 2                                                                                             | 3                               |
+|------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------------------------|
+| Sameer     | Same as Adrian                                           | Same as Adrian                                                                                | None                            |
+| Adrian     | Almost finished #14                                      | Need to add comments to #14 and then done, work on agile methods                              | None                            |
+| Daniel     | Finished #7 and #6 (#6 became DOD of 7), Helped with PHP | Need to upload #7 to github, work on setting up Sprint Review & final website upload for demo | None                            |
+| Scott      | Done with story #5                                       | Same as Gregor, general tidy up, continue on #6                                               | None                            |
+| Gregor     | Goals pages, add data to database, Done with #14         | Additional info, #6, general tidy up                                                          | None                            |
+| Alessandro | Done with #46 and #44                                    | Better styling for map buttons                                                                | Help with style would be useful |
+
 ---
