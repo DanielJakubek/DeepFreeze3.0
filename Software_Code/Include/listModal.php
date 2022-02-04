@@ -1,6 +1,6 @@
 <html>
   <!-- This php file is used to easily alter the code across all pages but also to increase readability -->
-  <script src="goalList.js"></script>
+  <script src="/Software_Code/Include/goalList.js"></script>
 
   <!-- Modal -->
   <div class="modal fade" id="goalListModal" tabindex="-1" aria-hidden="true">

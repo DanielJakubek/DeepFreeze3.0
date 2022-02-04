@@ -150,59 +150,17 @@
       </div>
     </div>
   </div>
-</div>
 
-    <div class="row">
-      <div class="col">
-
-        <div class="map" id="map">
-          <script>
-            loadMap("map", <?php
-              require_once("../Include/map.php");
-              loadMap(10);
-            ?>);
-          </script>
-        </div>
-        <nav id="map-menu"></nav>
-      </div>
-    </div>
-
-    <div class="container" id="container2">
-      <div class="col">
-        <ul>
-          <br></br>
-          <?php
-            include "../Include/mapDescription.php";
-            getMapDescriptions("10");
-          ?>
-        </ul>
-        <script>
-          //Deals with hiding and showing the form
-          function popUpWindow(){
-            var popUp = document.getElementById("infoPage");
-
-            if (popUp.style.display === "none") {
-              popUp.style.display = "block";
-            } else {
-              popUp.style.display = "none";
-            }
-          }
-
-        </script>
-
-        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
-        <div class="infoPopup" id="infoPage" style="display: none;" >
-          <form action="/No-Poverty.php" class="infoContainer">
-          <?php
-
-                    printData("4","Reduced-Inequalities");
-
-                  ?>
-                            </form>
-        </div>
-    </div>
-</div>
-</div>
+  <div class="map" id="map">
+    <script>
+      loadMap("map", <?php
+        require_once("../Include/map.php");
+        loadMap(10);
+      ?>);
+    </script>
+  </div>
+  <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
+  <div id="map-menu" style="display: none;"></div>
 </div>
 
     <!-- Footer -->
