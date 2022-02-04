@@ -16,13 +16,14 @@ For a more detailed view of the daily meetings, there's a video availible at {li
 
 ## Day [1] - Scrum Meeting summary
 
-| Question   | 1 | 2 | 3 |
-|------------|---|---|---|
-| Sameer     |   |   |   |
-| Adrian     |   |   |   |
-| Daniel     |   |   |   |
-| Scott      |   |   |   |
-| Alessandro |   |   |   |
+| Question   | 1                           | 2                                                         | 3                                     |
+|------------|-----------------------------|-----------------------------------------------------------|---------------------------------------|
+| Sameer     | Same as Adrian              | Same as Adrian                                            | None                                  |
+| Adrian     | Plan Sprint.                | Start on edit button for #17                              | None.                                 |
+| Daniel     | Plan Sprint, Start #47.     | Continue working on #47. Help Alessandro with JavaScript  | None.                                 |
+| Scott      | Same as Gregor              | Same as Gregor                                            | None.                                 |
+| Gregor     | Plan Sprint Review, Plan #6 | Try to finish #6 today and look  for something else to do | None.                                 |
+| Alessandro | Plan Sprint                 | Start on #46, try #43 if possible                         | Need someone to help with JavaScript  |
 
 ---
 
