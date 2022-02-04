@@ -658,7 +658,7 @@
                   loadMap("map", <?php
                     require_once("Include/map.php");
                     loadMap("all");
-                  ?>);
+                  ?>, false);
                 </script>
               </div>
               <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
