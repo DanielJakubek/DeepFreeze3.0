@@ -323,6 +323,8 @@ function setTexto($page, $element, $text)
                                                 #2</button></li>
                                         <li><button class="dropdown-item" name="selection2" type="submit" value="3">Item
                                                 #3</button></li>
+                                        <li><button class="dropdown-item" name="selection2" type="submit" value="4">Item
+                                                #4</button></li>
                                     </form>
                                 </ul>
                             </div>
