@@ -29,16 +29,11 @@ For a more detailed view of the daily meetings, there's a video availible at {li
 
 ## Day [2] - Scrum Meeting summary
 
-
 |Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |#1 |               |               |               |               |               |               |
-|#2 |  Peer programming with adrian, try to get user adding done- 16,17              | Peer programming with Sameer, try to get user adding done- 16,17               |  Work on 47             |    Peer programming 5 and 6           |  try 46, get all pages done             |  map locations             |
-|#3 |               |               |   Need to decide Javascript vs PHP for task            |               |   No Issues            |  Possible issues with javascript             |
-
-### Main Issue Points 
-Need to sort through software code,
-We should all be adding our own DOD (Definition of Done)
+|#2 |               |               |               |               |               |               |
+|#3 |               |               |               |               |               |               |
 
 ---
 
@@ -50,8 +45,13 @@ We should all be adding our own DOD (Definition of Done)
 |Question | Sameer   | Adrian        | Daniel        | Scott        | Gregor        | Alessandro    |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |#1 |               |               |               |               |               |               |
-|#2 |               |               |               |               |               |               |
-|#3 |               |               |               |               |               |               |
+|#2 |  Peer programming with adrian, try to get user adding done- 16,17              | Peer programming with Sameer, try to get user adding done- 16,17               |  Work on 47             |    Peer programming 5 and 6           |  try 46, get all pages done             |  map locations             |
+|#3 |               |               |   Need to decide Javascript vs PHP for task            |               |   No Issues            |  Possible issues with javascript             |
+
+### Main Issue Points 
+Need to sort through software code,
+We should all be adding our own DOD (Definition of Done)
+
 
 ---
 
