@@ -20,49 +20,74 @@
   <!-- Javascript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../Include/map.js"></script>
+  <script src="../Include/goalList.js"></script>
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: rgb(240, 240, 240);
-    }
-
-    #map {
-      position: static;
-      width: 100%;
-      height: 50vh;
-    }
-    .mapboxgl-ctrl-logo {
-    display: none !important;
-    }
-  </style>
 </head>
 
 
 <body>
-  <!-- Navigation bar -->
-  <nav class="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href=".//IndexTwo.php" id="SustainNavImg">
-        <img src="../Images/dundeeSus.png" alt="DundeeSus" class="d-inline-block align-text-top">
-      </a>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search. . ." aria-label="Search" id="searchForm">
-        <img src="../Images\noteBook.png" alt="listNoteBook" class="d-inline-block align-text-top" id="noteBookPng">
-      </form>
-    </div>
-  </nav>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../Index.php" id="SustainNavImg">
+          <img src="../Images\dundeeSus.png" alt="UnLogoSustain" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0"></ul>
+
+
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <h2 class="nav-link dropdown-toggle" id="navbarDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Goals
+                </h2>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropDown">
+                  <li><a class="dropdown-item" href="No-Poverty.php">No Poverty</a></li>
+                  <li><a class="dropdown-item" href="Zero-Hunger.php">Zero Hunger</a></li>
+                  <li><a class="dropdown-item" href="Good-Health-And-Well-Being.php">Good Health and Well-Being</a></li>
+                  <li><a class="dropdown-item" href="Quality-Education.php">Quality Education</a></li>
+                  <li><a class="dropdown-item" href="Gender-Equality.php">Gender Equality</a></li>
+                  <li><a class="dropdown-item" href="Clean-Water-And-Sanitation.php">Clean Water and Sanitation</a></li>
+                  <li><a class="dropdown-item" href="Clean-Energy.php">Affordable and Clean Energy </a></li>
+                  <li><a class="dropdown-item" href="Decent-Work-And-Economic-Growth.php">Decent Work and Economic Growth</a></li>
+                  <li><a class="dropdown-item" href="Industry-Innovation-And-Infrastructure.php">Industry, Innovation and Infrastructure</a></li>
+                  <li><a class="dropdown-item" href="Reduced-Inequalities.php">Reduced Inequalities</a></li>
+                  <li><a class="dropdown-item" href="Sustainable-Cities-And-Communities.php">Sustainable Cities and communities</a></li>
+                  <li><a class="dropdown-item" href="Responsible-Consumption-And-Production.php">Responsible Consumption and Production</a></li>
+                  <li><a class="dropdown-item" href="Climate-Action.php">Climate Action</a></li>
+                  <li><a class="dropdown-item" href="Life-Below-Water.php">Life Below Water</a></li>
+                  <li><a class="dropdown-item" href="Life-On-Land.php">Life On Land</a></li>
+                  <li><a class="dropdown-item" href="Peace-And-Justice.php">Peace, Justice and Strong Institutions</a></li>
+                  <li><a class="dropdown-item" href="Partnerships-For-The-Goals.php">Partnership for the Goals</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div id="listButton">
+              <a type="button" data-bs-toggle="modal" id="listButton" data-bs-target="#goalListModal">
+                <img src="../Images\noteBook.png" alt="listNoteBook" class="d-inline-block align-text-top" id="noteBookPng">
+              </a>
+            </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <?php include "../Include/listModal.php"; //Modal for the list, increases readabiliy of this page?>
 
   <!--https://sdgs.un.org/goals/goal1-->
   <!-- The main text of the page -->
   <div class="container">
     <div class="row">
       <div class="col clearfix">
-        <h1 class="text-center">Zero Hunger</h1>
+        <h1 class="text-center">Quality Education</h1>
       </br>
         <h2 class="text-center">
-          The our main goal is to end hunger
+          ...
         </h2>
         <div class="accordion" id="accordion1">
           <div class="accordion-item">
@@ -73,13 +98,13 @@
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion1">
           <div class="accordion-body">
-            <img src="Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+            <img src="../images/4.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
               <p>
-              <?php 
+              <?php
                     include "../Include/printPageGoals.php";
 
                     printData("1","Quality-Education");
-                    
+
                   ?>
               </p>
           </div>
@@ -93,12 +118,12 @@
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="header2" data-bs-parent="#accordion1">
           <div class="accordion-body">
-            <img src="Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+            <img src="../images/4.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
             <p>
-            <?php 
+            <?php
 
                     printData("2","Quality-Education");
-                    
+
                   ?>
             </p>
           </div>
@@ -113,12 +138,12 @@
       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
         <div class="accordion-body">
           <div class="container">
-            <img src="Images/2.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
+            <img src="../images/4.jpg" class="float-md-end mb-3 ms-md-3" alt="placeholder" style="max-width:250px; max-height:250px;">
             <p>
-            <?php 
+            <?php
 
                     printData("3","Quality-Education");
-                    
+
                   ?>
             </p>
           </div>
@@ -146,19 +171,11 @@
     <div class="container" id="container2">
       <div class="col">
         <ul>
-          <br>
-          <li>FareShare dundee</li>
-          <br>
-          <li>Dundee Community Fridge</li>
-          <br>
-          <li>Dundee & Angus Foodbank</li>
-          <li>Dundee Bairns is a charity working to benefit children in Dundee, addressing inequality in basic needs such as food and clothing.</li>
-          <br>
-          <li>Dundee Fighting for Fairness is a charity to voice for people in poverty in Dundee. </li>
-          <br>
-          <li>Positive Steps Partnership is a that charity provides supported accommodation services for vulnerable adults </li>
-          <br>
-          <li>FareShare Dundee provides support to homeless and vulnerable individuals and offers training and volunteering opportunities. One of their projects - Transform Furniture - is a community based project that works towards overcoming poverty by providing quality reusable furniture and electrical household items to disadvantaged local groups, and training and employment opportunities for local people having difficulties in finding a job whilst reducing the amount of household goods that end up in landfill.</li>
+          <br></br>
+          <?php
+            include "../Include/mapDescription.php";
+            getMapDescriptions("4");
+          ?>
         </ul>
         <script>
           //Deals with hiding and showing the form
@@ -177,10 +194,10 @@
         <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
         <div class="infoPopup" id="infoPage" style="display: none;" >
           <form action="/No-Poverty.php" class="infoContainer">
-          <?php 
+          <?php
 
                     printData("4","Quality-Education");
-                    
+
                   ?>          </form>
         </div>
     </div>

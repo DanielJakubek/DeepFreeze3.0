@@ -1,27 +1,27 @@
 
 /* Navigation */
-#SustainNavImg{
-  margin: 0.35in;
-}
 
 nav img{
   max-width: 40vh;
 }
 
 #noteBookPng{
-  max-width: 5vh;
-  margin-left: 25px;
+  max-width: 65px;
 }
 
-nav #searchForm{
-  border: none;
-  border-bottom: black 3px solid;
-  width: 60%;
+#navDropDown,#listButton{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-nav form{
-  margin-right: 20px;
+/* User List */
+#deleteEntry{
+  text-align: center;
+  color: red;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 20px;
 }
+#tableDeleteCol{ text-align: center;}
 
 /* Main content */
 
@@ -139,7 +139,6 @@ p,u{ font-family: 'Roboto' !important; }
   border-radius: 3px;
 }
 
-
 /* Footer */
 footer{
   background-color: black;
@@ -147,8 +146,6 @@ footer{
   text-align: center;
   opacity: 0.97;
 }
-
-
 
 footer #map{
   border: 5px white solid;
@@ -173,8 +170,6 @@ footer .row{
   text-decoration: none;
 }
 
-
-
 /* Different Screen sizes */
 @media screen and (max-width: 1200px) {
   #mobileCarousel{ display: block !important;}
@@ -195,8 +190,6 @@ footer .row{
 
 
 /* */
-
-
 
 
 .infoPopup {

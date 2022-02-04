@@ -6,7 +6,7 @@ name: Build and deploy PHP app to Azure Web App - DeepFreeze
 on:
   push:
     branches:
-      - Build-2.1
+      - Story7Items
   workflow_dispatch:
 
 jobs:
@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'DeepFreeze'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2C106E14815544A0AF24C2326F77FF5D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B88B8F68129D46F599AF7869E4E611AB }}
           package: .
