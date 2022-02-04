@@ -77,8 +77,8 @@ function createMapControl(map, layer) {
     }
 
     const addToListButton = document.createElement("button");
-    addToListButton.className = "btn btn-primary";
-    addToListButton.textContent = "Add to list";
+    addToListButton.className = "btn btn-primary btn-sm";
+    addToListButton.textContent = "+";
     addToListButton.onclick = function (e) {
         checkArrayExists(layer.name);
     };
@@ -88,7 +88,9 @@ function createMapControl(map, layer) {
     bold.appendChild(document.createTextNode(": "))
 
     const row = document.createElement("li");
+    row.className = "map-list-entry";
     row.appendChild(hideButton);
+    row.appendChild(document.createTextNode(" "));
     row.appendChild(addToListButton);
     row.appendChild(document.createTextNode("  "));
     row.appendChild(bold);

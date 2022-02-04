@@ -111,9 +111,7 @@
                 <p>
                   <?php
                     include "../Include/printPageGoals.php";
-
                     printData("1","Quality-Education");
-
                   ?>
                 </p>
               </div>
@@ -133,9 +131,7 @@
                   style="max-width:250px; max-height:250px;">
                 <p>
                   <?php
-
                     printData("2","Quality-Education");
-
                   ?>
                 </p>
               </div>
@@ -156,10 +152,8 @@
                     style="max-width:250px; max-height:250px;">
                   <p>
                     <?php
-
-                    printData("3","Quality-Education");
-
-                  ?>
+                      printData("3","Quality-Education");
+                    ?>
                   </p>
                 </div>
               </div>
@@ -174,31 +168,41 @@
             ?>);
           </script>
         </div>
-        <button type="button" class="btn btn-dark" onclick="popUpWindow();">More info</button>
-        <div id="map-menu" style="display: none;"></div>
-        <!-- Footer -->
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <div class="container" id="footerContactUs">
-                  <h3>For enquiries</h3>
-                  <p>Please contact the Sustainability and Climate Change Team on: </p>
-                  <div>
-                    <a href="mailto:sustainability@dundeecity.gov.uk"> Email: sustainability@dundeecity.gov.uk </a>
-                  </div>
-                  <div>
-                    <a href="https://twitter.com/sust_dundee"> Twitter: @sust_dundee </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-
-              </div>
-              <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
+        <div id="map-menu"></div>
+        <div class="container-flex">
+          <div class="infoContainer">
+            <?php
+              printData("4","Energy");
+            ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <div class="container" id="footerContactUs">
+            <h3>For enquiries</h3>
+            <p>Please contact the Sustainability and Climate Change Team on: </p>
+            <div>
+              <a href="mailto:sustainability@dundeecity.gov.uk"> Email: sustainability@dundeecity.gov.uk </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/sust_dundee"> Twitter: @sust_dundee </a>
             </div>
           </div>
-        </footer>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+        </div>
+        <div class="container-fluid" id="copyrightText"> © 2022 DeepFreezeInc </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

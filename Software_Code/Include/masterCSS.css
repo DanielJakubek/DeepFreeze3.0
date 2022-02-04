@@ -200,7 +200,7 @@ footer .row{
 
 }
 .infoContainer {
- width: 30%;
+ width: 100%;
  height: 100%;
  background: white;
  padding: 5px;
@@ -208,4 +208,9 @@ footer .row{
 
 .container2{
   width:100%;
+}
+
+.map-list-entry {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
