@@ -1,5 +1,5 @@
-function loadMap(map, layers) {
-    console.log(layers);
+function loadMap(map, layers, addListButtons = false) {
+    // Create the map and add navigation controls
     mapboxgl.accessToken = "pk.eyJ1IjoiZ3JlZ29yZG9vbSIsImEiOiJja3l1NjF4Z2wwM2MwMm50NHVqeG52c2Y0In0.KNoSFWWsfL7xrj2kAnwjpQ";
     var map = new mapboxgl.Map({
         container: map,
@@ -10,8 +10,11 @@ function loadMap(map, layers) {
     });
     map.addControl(new mapboxgl.NavigationControl());
 
+    // When it's done loading
     map.on("load", function () {
+        // For every layer...
         for (const layer of layers) {
+            // Add it as a point
             map.addSource(layer.name, {
                 "type": "geojson",
                 "data": {
@@ -35,13 +38,15 @@ function loadMap(map, layers) {
                 },
                 "filter": ["==", "$type", "Point"]
             });
-            const row = createMapControl(map, layer);
+            // And add a row to the map controls
+            const row = createMapControl(map, layer, addListButtons);
             document.getElementById("map-menu").appendChild(row);
         }
     });
 }
 
-function createMapControl(map, layer) {
+function createMapControl(map, layer, addListButton) {
+    // Clickable link to move the map
     const link = document.createElement("a");
     link.id = layer.name;
     link.href = "#map";
@@ -54,6 +59,7 @@ function createMapControl(map, layer) {
         })
     }
 
+    // Button to show/hide the point of the map
     const hideButton = document.createElement("button");
     hideButton.className = "btn btn-secondary";
     hideButton.textContent = "Hide";
@@ -76,22 +82,27 @@ function createMapControl(map, layer) {
         }
     }
 
-    const addToListButton = document.createElement("button");
-    addToListButton.className = "btn btn-primary btn-sm";
-    addToListButton.textContent = "+";
-    addToListButton.onclick = function (e) {
-        checkArrayExists(layer.name);
-    };
 
+    // Bold text, containing the link and a colon
     const bold = document.createElement("b");
     bold.appendChild(link);
     bold.appendChild(document.createTextNode(": "))
 
+    // the full row of controls, containing everything relevant to this one point
     const row = document.createElement("li");
     row.className = "map-list-entry";
     row.appendChild(hideButton);
     row.appendChild(document.createTextNode(" "));
-    row.appendChild(addToListButton);
+    if (addListButton) {
+        // Button to add the map element to the cart.
+        const addToListButton = document.createElement("button");
+        addToListButton.className = "btn btn-primary btn-sm";
+        addToListButton.textContent = "+";
+        addToListButton.onclick = function (e) {
+            checkArrayExists(layer.name);
+        };
+        row.appendChild(addToListButton);
+    }
     row.appendChild(document.createTextNode("  "));
     row.appendChild(bold);
     row.appendChild(document.createTextNode(layer.description));
@@ -99,6 +110,7 @@ function createMapControl(map, layer) {
     return row;
 }
 
+// Show or hide the corresponding map element.
 function popUpWindow() {
     var popUp = document.getElementById("map-menu");
 
