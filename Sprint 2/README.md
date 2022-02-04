@@ -46,13 +46,14 @@ For a more detailed view of the daily meetings, there's a video availible at {li
 
 ## Day [3] - Scrum Meeting summary
 
-| Question   | 1 | 2 | 3 |
-|------------|---|---|---|
-| Sameer     |   |   |   |
-| Adrian     |   |   |   |
-| Daniel     |   |   |   |
-| Scott      |   |   |   |
-| Alessandro |   |   |   |
+| Question   | 1                                             | 2                                                                   | 3                                         |
+|------------|-----------------------------------------------|---------------------------------------------------------------------|-------------------------------------------|
+| Sameer     | Same as Adrian                                | Same as Adrian                                                      | 17 Pages not done, cannot continue on #17 |
+| Adrian     | Adding User's to database                     | Start on edit button for #17, Database calls to get data into pages | Same as Sameer                            |
+| Daniel     | Finished #47                                  | Start on #7, Need to setup database table for 17 pages              | None                                      |
+| Scott      | Same as Gregor                                | Same as Gregor                                                      | None.                                     |
+| Gregor     | Rebuild 17 pages, completed #43               | Upload new pages                                                    | None.                                     |
+| Alessandro | Further worked on Maps, started toggle points | Continue on toggle points                                           | Need someone to help with JavaScript      |
 
 ---
 
