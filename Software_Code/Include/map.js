@@ -1,4 +1,4 @@
-function loadMap(map, layers, addListButtons = false) {
+function loadMap(map, layers, addListButtons = true) {
     // Create the map and add navigation controls
     mapboxgl.accessToken = "pk.eyJ1IjoiZ3JlZ29yZG9vbSIsImEiOiJja3l1NjF4Z2wwM2MwMm50NHVqeG52c2Y0In0.KNoSFWWsfL7xrj2kAnwjpQ";
     var map = new mapboxgl.Map({
