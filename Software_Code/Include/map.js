@@ -30,7 +30,8 @@ function loadMap(map, layers) {
                     "text-variable-anchor": ["top", "bottom", "left", "right"],
                     "text-radial-offset": 0.5,
                     "text-justify": "auto",
-                    "icon-image": ["concat", ["get", "icon"], "-15"]
+                    "icon-image": ["concat", ["get", "icon"], "-15"],
+                    'icon-size': 2
                 },
                 "filter": ["==", "$type", "Point"]
             });
